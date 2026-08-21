@@ -1,0 +1,40 @@
+{
+  "payload": {
+    "name": "flare-vm@google.com",
+    "email": "flare-vm@google.com",
+    "licenses": [
+      {
+        "id": "96-5375-A39B-47",
+        "owner": "flare-vm@google.com",
+        "product_id": "IDAFREE",
+        "edition_id": "ida-free",
+        "description": "IDA Free PC",
+        "start_date": "2025-06-02",
+        "end_date": "2026-06-02",
+        "issued_on": "2025-06-02 07:34:04",
+        "license_type": "named",
+        "seats": 1,
+        "add_ons": [
+          {
+            "id": "97-ED78-04A8-E1",
+            "code": "HEXCX64",
+            "owner": "96-5375-A39B-47",
+            "start_date": "2025-06-02",
+            "end_date": "2026-06-02"
+          },
+          {
+            "id": "97-E4EF-304A-9E",
+            "code": "HEXCX86",
+            "owner": "96-5375-A39B-47",
+            "start_date": "2025-06-02",
+            "end_date": "2026-06-02"
+          }
+        ]
+      }
+    ]
+  },
+  "header": {
+    "version": 1
+  },
+  "signature": "F2D91ABB037B365009BD3BB7F9BBE9F8670B1B2637550DD4072BF19636B75FF0FA23A9F9903369A9D88DB1793F850D7C802430626C94348009CBFA3DA45535EE0FD064CD59FA025FC5D711E35945A1282EA5F30C13B37D88F5CF4436387329E0B69DD4358C3458DEE0240F8DD34AF3F122E1E7D8C04F34D6F4AC3B6AB03BFA23"
+}
