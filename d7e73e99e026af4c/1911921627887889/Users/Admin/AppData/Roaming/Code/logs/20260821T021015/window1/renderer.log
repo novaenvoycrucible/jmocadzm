@@ -1,0 +1,16 @@
+2026-08-21 02:10:19.358 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2026-08-21 02:10:19.660 [info] Started local extension host with pid 8268.
+2026-08-21 02:10:20.136 [info] MCP Registry configured: https://api.mcp.github.com/2025-09-15
+2026-08-21 02:10:20.142 [error] Extension 'ms-python.vscode-python-envs' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): terminalShellEnv, terminalDataWriteEvent
+product.json (WINS): terminalShellEnv
+2026-08-21 02:10:20.831 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2026-08-21 02:10:23.253 [info] [perf] Render performance baseline is 61ms
+2026-08-21 02:10:23.779 [info] Auto updating outdated extensions. ms-python.debugpy, ms-python.python
+2026-08-21 02:10:51.698 [info] Auto updating outdated extensions. ms-python.vscode-pylance, ms-python.vscode-python-envs
+2026-08-21 02:10:53.810 [error] Cannot read the extension from /c:/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64: ScanningExtension: Cannot read the extension from /c:/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64
+    at Wh.scanLocalExtension (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:75166)
+    at async Hh.h (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:80408)
+2026-08-21 02:11:10.496 [error] Cannot read the extension from /c:/Users/Admin/.vscode/extensions/ms-python.vscode-pylance-2026.3.1: ScanningExtension: Cannot read the extension from /c:/Users/Admin/.vscode/extensions/ms-python.vscode-pylance-2026.3.1
+    at Wh.scanLocalExtension (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:75166)
+    at async Hh.h (file:///c:/Program%20Files/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:74:80408)
