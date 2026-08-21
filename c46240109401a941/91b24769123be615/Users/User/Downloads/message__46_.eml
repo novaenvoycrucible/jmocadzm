@@ -1,0 +1,6 @@
+Reporting-MTA: dns; out15.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;prognoz_busk@lvgas.com.ua
+Status: 5.0.0
+
