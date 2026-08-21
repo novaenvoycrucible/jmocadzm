@@ -1,0 +1,59 @@
+; G2070U.inf
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%CANON%
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Class=USB
+DriverVer=08/31/2023, 1.0.1.0
+CatalogFile=G2070U.cat
+
+[Manufacturer]
+"Canon" = Canon,NTamd64
+
+[SourceDisksNames]
+1=%DISKLABEL%,,
+
+[SourceDisksFiles]
+
+[Canon]
+"Canon G2070 series USB Driver 1"=Canon_Install, USB\VID_04A9&PID_18F5&MI_02
+"Canon G2070 series USB Driver 2"=Canon_Install, USB\VID_04A9&PID_18F5&MI_03
+
+"Canon G2070 series WinUSB Driver 1"=CanonUSB_Install, USB\VID_04A9&PID_18F5&MI_04
+"Canon G2070 series WinUSB Driver 2"=CanonUSB_Install, USB\VID_04A9&PID_18F5&MI_05
+
+[Canon.NTamd64]
+"Canon G2070 series USB Driver 1"=Canon_Install, USB\VID_04A9&PID_18F5&MI_02
+"Canon G2070 series USB Driver 2"=Canon_Install, USB\VID_04A9&PID_18F5&MI_03
+
+"Canon G2070 series WinUSB Driver 1"=CanonUSB_Install, USB\VID_04A9&PID_18F5&MI_04
+"Canon G2070 series WinUSB Driver 2"=CanonUSB_Install, USB\VID_04A9&PID_18F5&MI_05
+
+[Canon_Install]
+CopyFiles=Nothing
+AddReg=Nothing
+
+[Nothing]
+
+[Canon_Install.Services]
+AddService = ,2;
+
+[CanonUSB_Install]
+Include = winusb.inf
+Needs   = WINUSB.NT
+
+[CanonUSB_Install.Services]
+Include = winusb.inf
+Needs   = WINUSB.NT.Services
+
+[CanonUSB_Install.HW]
+AddReg=Dev_AddReg
+
+[Dev_AddReg]
+HKR,,DeviceInterfaceGUID,0x00000000,"{68f450d9-27ed-4bbb-b0ad-46de13aece13}"
+
+[Strings]
+CANON="Canon"
+DISKLABEL="Canon G2070 series USB Driver"
