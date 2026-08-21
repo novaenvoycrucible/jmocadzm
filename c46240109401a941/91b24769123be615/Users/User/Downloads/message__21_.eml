@@ -1,0 +1,6 @@
+Reporting-MTA: dns; out15.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;ekg.cabinet.zi@gmaii.com
+Status: 5.0.0
+
