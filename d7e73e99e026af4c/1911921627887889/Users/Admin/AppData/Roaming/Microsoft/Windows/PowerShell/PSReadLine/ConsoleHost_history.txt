@@ -1,0 +1,12 @@
+(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1',"$([Environment]::GetFolderPath("Desktop"))\install.ps1")
+Unblock-File .\install.ps1
+(New-Object net.webclient).DownloadFile('https://raw.githubusercontent.com/mandiant/flare-vm/main/install.ps1',"$([Environment]::GetFolderPath("Desktop"))\install.ps1")
+dir
+cd C:\Users\Admin\Desktop
+dir
+Unblock-File .\install.ps1
+Set-ExecutionPolicy Unrestricted -Force
+cd ../../
+cd C:\Users\Admin\Desktop
+Set-ExecutionPolicy Unrestricted -Force
+.\install.ps1
