@@ -1,0 +1,1502 @@
+[WHONET Configuration File]
+Configuration File Encoding = UTF-8
+Configuration Version = G
+Laboratory Name = Бактеріологічна лабораторія
+Laboratory Type = Human
+Use dynamic breakpoints = False
+Round half dilutions = True
+Use intrinsic resistance rules = True
+Guideline year = 2022
+Breakpoint types = Human
+Sites of infection = Non-meningitis|Parenteral||Urinary tract infection|Meningitis|Oral|Intravenous|Extraintestinal|Abscesses|Genital|Intestinal|Mastitis|Metritis|Non-pneumonia|Other infections|Pneumonia|Prophylaxis|Respiratory|Screen|Skin|Soft tissue|Wounds
+
+[Wards]
+"trm","Травматология","in","","trm","OKL"
+"sur","Хирургия","in","","sur","OKL"
+"burn","Ожоговое","in","","burn","OKL"
+"icu","ОРИТ","icu","","icu","OKL"
+
+[Institutions]
+"OKL","Бактеріологічна лабораторія"
+"oth","Інший"
+
+[Departments]
+"med","Препарат"
+"sur","Оперативное вмешательство"
+"tran","Служба трансплантации"
+"trm","Травматология"
+"icu","Отделение реанимации и интенсивной терапии"
+"aicu","Отделение интенсивной терапии для взрослых"
+"picu","Отделение интенсивной терапии для детей"
+"nicu","Отделение интенсивной терапии новорожденных"
+"ccu","Кардиологическое отделение"
+"burn","Ожог"
+"int","Палата послеоперационного наблюдения"
+"obg","Акушерство/Гинекология"
+"ped","Педиатрия"
+"neo","Неонатология"
+"inf","Инфекционные болезни"
+"hao","Гематология / Онкология"
+"psy","Психиатрия"
+"eme","Чрезвычайная ситуация"
+"out","Амбулаторный"
+"lab","Лаборатория"
+"cli","Другая клиника"
+"hos","Другая больница"
+"nur","Дом престарелых"
+"com","Сообщество"
+"mix","Смешанный"
+"oth","Другой"
+"unk","Неизвестно"
+"sur","Хирургическое"
+
+[Antibiotics]
+Antibiotic Code List Version = A
+Default Breakpoints = EUCST
+Default Test Method = Disk diffusion
+AZM_ED15,Azithromycin_EUCST_Disk_15μg,,,
+AZM_EM,Azithromycin_EUCST_MIC,,,
+ATM_ED30,Aztreonam_EUCST_Disk_30μg,,,
+ATM_EM,Aztreonam_EUCST_MIC,,,
+AMK_ED30,Amikacin_EUCST_Disk_30μg,,,
+AMK_EM,Amikacin_EUCST_MIC,,,
+AMX_ED10,Amoxicillin_EUCST_Disk_10μg,,,
+AMX_EM,Amoxicillin_EUCST_MIC,,,
+AMP_ED10,Ampicillin_EUCST_Disk_10μg,,,
+AMP_ED2,Ampicillin_EUCST_Disk_2μg,,,
+AMP_EM,Ampicillin_EUCST_MIC,,,
+SAM_ED10,Ampicillin/Sulbactam_EUCST_Disk_10/10μg,,,
+SAM_EM,Ampicillin/Sulbactam_EUCST_MIC,,,
+AMC_ED2,Amoxicillin/Clavulanic acid_EUCST_Disk_2/1μg,,,
+AMC_ED20,Amoxicillin/Clavulanic acid_EUCST_Disk_20/10μg,,,
+AMC_EM,Amoxicillin/Clavulanic acid_EUCST_MIC,,,
+VAN_ED5,Vancomycin_EUCST_Disk_5μg,,,
+VAN_EM,Vancomycin_EUCST_MIC,,,
+VAN_EE,Vancomycin_EUCST_Etest,,,
+GEN_ED10,Gentamicin_EUCST_Disk_10μg,,,
+GEN_EM,Gentamicin_EUCST_MIC,,,
+GEH_ED30,Gentamicin-High_EUCST_Disk_30μg,,,
+GEH_EM,Gentamicin-High_EUCST_MIC,,,
+DAL_ED,Dalbavancin_EUCST_Disk_,,,
+DAL_EM,Dalbavancin_EUCST_MIC,,,
+DAP_EM,Daptomycin_EUCST_MIC,,,
+DAP_EE,Daptomycin_EUCST_Etest,,,
+DOR_ED10,Doripenem_EUCST_Disk_10μg,,,
+DOR_EM,Doripenem_EUCST_MIC,,,
+DOX_ED30,Doxycycline_EUCST_Disk_30μg,,,
+DOX_EM,Doxycycline_EUCST_MIC,,,
+IPM_ED10,Imipenem_EUCST_Disk_10μg,,,
+IPM_EM,Imipenem_EUCST_MIC,,,
+CLR_ED15,Clarithromycin_EUCST_Disk_15μg,,,
+CLR_EM,Clarithromycin_EUCST_MIC,,,
+CLI_ED2,Clindamycin_EUCST_Disk_2μg,,,
+CLI_EM,Clindamycin_EUCST_MIC,,,
+COL_EM,Colistin_EUCST_MIC,,,
+CHL_ED30,Chloramphenicol_EUCST_Disk_30μg,,,
+CHL_EM,Chloramphenicol_EUCST_MIC,,,
+LVX_ED5,Levofloxacin_EUCST_Disk_5μg,,,
+LVX_EM,Levofloxacin_EUCST_MIC,,,
+LNZ_ED10,Linezolid_EUCST_Disk_10μg,,,
+LNZ_EM,Linezolid_EUCST_MIC,,,
+MEM_ED10,Meropenem_EUCST_Disk_10μg,,,
+MEM_EM,Meropenem_EUCST_MIC,,,
+MTR_ED10,Metronidazole_EUCST_Disk_10μg,,,
+MTR_EM,Metronidazole_EUCST_MIC,,,
+MNO_ED30,Minocycline_EUCST_Disk_30μg,,,
+MNO_EM,Minocycline_EUCST_MIC,,,
+MEC_ED10,Mecillinam_EUCST_Disk_10μg,,,
+MEC_EM,Mecillinam_EUCST_MIC,,,
+MFX_ED5,Moxifloxacin_EUCST_Disk_5μg,,,
+MFX_EM,Moxifloxacin_EUCST_MIC,,,
+MUP_ED200,Mupirocin_EUCST_Disk_200μg,,,
+MUP_EM,Mupirocin_EUCST_MIC,,,
+NAL_ED30,Nalidixic acid_EUCST_Disk_30μg,,,
+NAL_EM,Nalidixic acid_EUCST_MIC,,,
+NIT_ED100,Nitrofurantoin_EUCST_Disk_100μg,,,
+NIT_EM,Nitrofurantoin_EUCST_MIC,,,
+NOR_ED10,Norfloxacin_EUCST_Disk_10μg,,,
+NOR_EM,Norfloxacin_EUCST_MIC,,,
+OXA_ED1,Oxacillin_EUCST_Disk_1μg,,,
+OXA_EM,Oxacillin_EUCST_MIC,,,
+ORI_ED,Oritavancin_EUCST_Disk_,,,
+ORI_EM,Oritavancin_EUCST_MIC,,,
+OFX_ED5,Ofloxacin_EUCST_Disk_5μg,,,
+OFX_EM,Ofloxacin_EUCST_MIC,,,
+PEN_ED1,Penicillin G_EUCST_Disk_1unit,,,
+PEN_EM,Penicillin G_EUCST_MIC,,,
+PEN_EE,Penicillin G_EUCST_Etest,,,
+PIP_ED30,Piperacillin_EUCST_Disk_30μg,,,
+PIP_EM,Piperacillin_EUCST_MIC,,,
+TZP_ED30,Piperacillin/Tazobactam_EUCST_Disk_30/6μg,,,
+TZP_EM,Piperacillin/Tazobactam_EUCST_MIC,,,
+RIF_ED5,Rifampin_EUCST_Disk_5μg,,,
+RIF_EM,Rifampin_EUCST_MIC,,,
+TEC_ED30,Teicoplanin_EUCST_Disk_30μg,,,
+TEC_EM,Teicoplanin_EUCST_MIC,,,
+TEC_EE,Teicoplanin_EUCST_Etest,,,
+TLT_ED15,Telithromycin_EUCST_Disk_15μg,,,
+TLT_EM,Telithromycin_EUCST_MIC,,,
+TCY_ED30,Tetracycline_EUCST_Disk_30μg,,,
+TCY_EM,Tetracycline_EUCST_MIC,,,
+TGC_ED15,Tigecycline_EUCST_Disk_15μg,,,
+TGC_EM,Tigecycline_EUCST_MIC,,,
+TCC_ED75,Ticarcillin/Clavulanic acid_EUCST_Disk_75/10-15μg,,,
+TCC_EM,Ticarcillin/Clavulanic acid_EUCST_MIC,,,
+TOB_ED10,Tobramycin_EUCST_Disk_10μg,,,
+TOB_EM,Tobramycin_EUCST_MIC,,,
+TMP_ED5,Trimethoprim_EUCST_Disk_5μg,,,
+TMP_EM,Trimethoprim_EUCST_MIC,,,
+SXT_ED1_2,Trimethoprim/Sulfamethoxazole_EUCST_Disk_1.25/23.75μg,,,
+SXT_EM,Trimethoprim/Sulfamethoxazole_EUCST_MIC,,,
+FOS_ED200,Fosfomycin_EUCST_Disk_200μg,,,
+FOS_EM,Fosfomycin_EUCST_MIC,,,
+FOS_EE,Fosfomycin_EUCST_Etest,,,
+FUS_ED10,Fusidic acid_EUCST_Disk_10μg,,,
+FUS_EM,Fusidic acid_EUCST_MIC,,,
+QDA_ED15,Quinupristin/Dalfopristin_EUCST_Disk_15μg,,,
+QDA_EM,Quinupristin/Dalfopristin_EUCST_MIC,,,
+CIP_ED5,Ciprofloxacin_EUCST_Disk_5μg,,,
+CIP_EM,Ciprofloxacin_EUCST_MIC,,,
+CFR_ED30,Cefadroxil_EUCST_Disk_30μg,,,
+CFR_EM,Cefadroxil_EUCST_MIC,,,
+CZO_ED30,Cefazolin_EUCST_Disk_30μg,,,
+CZO_EM,Cefazolin_EUCST_MIC,,,
+CEC_ED30,Cefaclor_EUCST_Disk_30μg,,,
+CEC_EM,Cefaclor_EUCST_MIC,,,
+LEX_ED30,Cephalexin_EUCST_Disk_30μg,,,
+LEX_EM,Cephalexin_EUCST_MIC,,,
+FEP_ED30,Cefepime_EUCST_Disk_30μg,,,
+FEP_EM,Cefepime_EUCST_MIC,,,
+CFM_ED5,Cefixime_EUCST_Disk_5μg,,,
+CFM_EM,Cefixime_EUCST_MIC,,,
+FOX_ED30,Cefoxitin_EUCST_Disk_30μg,,,
+FOX_EM,Cefoxitin_EUCST_MIC,,,
+CTX_ED5,Cefotaxime_EUCST_Disk_5μg,,,
+CTX_EM,Cefotaxime_EUCST_MIC,,,
+CPD_ED10,Cefpodoxime_EUCST_Disk_10μg,,,
+CPD_EM,Cefpodoxime_EUCST_MIC,,,
+CAZ_ED10,Ceftazidime_EUCST_Disk_10μg,,,
+CAZ_EM,Ceftazidime_EUCST_MIC,,,
+CTB_ED30,Ceftibuten_EUCST_Disk_30μg,,,
+CTB_EM,Ceftibuten_EUCST_MIC,,,
+BPR_ED5,Ceftobiprole_EUCST_Disk_5μg,,,
+BPR_EM,Ceftobiprole_EUCST_MIC,,,
+CRO_ED30,Ceftriaxone_EUCST_Disk_30μg,,,
+CRO_EM,Ceftriaxone_EUCST_MIC,,,
+CXM_ED30,Cefuroxime_EUCST_Disk_30μg,,,
+CXM_EM,Cefuroxime_EUCST_MIC,,,
+ERY_ED15,Erythromycin_EUCST_Disk_15μg,,,
+ERY_EM,Erythromycin_EUCST_MIC,,,
+ETP_ED10,Ertapenem_EUCST_Disk_10μg,,,
+ETP_EM,Ertapenem_EUCST_MIC,,,
+CZA_EM,Ceftazidime/Avibactam_EUCST_MIC,,,
+CZA_ED10,Ceftazidime/Avibactam_EUCST_Disk_10/4μg,,,
+FDC_ED,Cefiderocol_EUCST_Disk_,,,
+FDC_EM,Cefiderocol_EUCST_MIC,,,
+CZT_EM,Ceftolozane/Tazobactam_EUCST_MIC,,,
+CZT_ED30,Ceftolozane/Tazobactam_EUCST_Disk_30/10μg,,,
+TZD_ED,Tedizolid_EUCST_Disk_,,,
+TZD_EM,Tedizolid_EUCST_MIC,,,
+
+[Antibiotic Species-Specific Breakpoints]
+139,AZM_ED15,16,15,,Human,Human
+val,AZM_ED15,16,15,,Human,Human
+vel,AZM_ED15,16,15,,Human,Human
+vfl,AZM_ED15,16,15,,Human,Human
+vhi,AZM_ED15,16,15,,Human,Human
+vic,AZM_ED15,16,15,,Human,Human
+vin,AZM_ED15,16,15,,Human,Human
+vip,AZM_ED15,16,15,,Human,Human
+vo1,AZM_ED15,16,15,,Human,Human
+vog,AZM_ED15,16,15,,Human,Human
+vvu,AZM_ED15,16,15,,Human,Human
+vx1,AZM_ED15,16,15,,Human,Human
+AER,ATM_ED30,26,28,,Human,Human
+PS-,ATM_ED30,18,49,,Human,Human
+EBC,ATM_ED30,21,25,,Human,Human
+sau,AMK_ED30,15,14,,Human,Human
+sc+,AMK_ED30,18,17,,Human,Human
+SCN,AMK_ED30,15,14,,Human,Human
+AC-,AMK_ED30,19,18,,Human,Human
+AC-,AMK_ED30,19,18,Urinary tract infection,Human,Human
+PS-,AMK_ED30,15,14,,Human,Human
+PS-,AMK_ED30,15,14,Urinary tract infection,Human,Human
+EBC,AMK_ED30,18,17,,Human,Human
+EBC,AMK_ED30,18,17,Urinary tract infection,Human,Human
+EBC,AMP_ED10,14,13,,Human,Human
+lmo,AMP_ED2,16,15,Intravenous,Human,Human
+pam,AMP_ED2,0,0,,Human,Human
+sap,AMP_ED2,18,17,,Human,Human
+spn,AMP_ED2,19,21,Non-meningitis,Human,Human
+SVI,AMP_ED2,15,20,,Human,Human
+AEC,AMP_ED2,26,25,,Human,Human
+ENT,AMP_ED2,8,9,,Human,Human
+HA-,AMP_ED2,18,17,Non-meningitis,Human,Human
+HA-,AMP_ED2,0,0,Meningitis,Human,Human
+EBC,SAM_ED10,14,13,,Human,Human
+bca,AMC_ED2,19,18,,Human,Human
+pam,AMC_ED2,15,14,,Human,Human
+HA-,AMC_ED2,15,49,Oral,Human,Human
+HA-,AMC_ED2,15,14,Intravenous,Human,Human
+ppm,AMC_ED20,22,49,,Human,Human
+EBC,AMC_ED20,19,18,,Human,Human
+EBC,AMC_ED20,16,15,Urinary tract infection,Human,Human
+ban,VAN_ED5,0,0,,Human,Human
+cpe,VAN_ED5,12,11,,Human,Human
+pro,VAN_ED5,22,21,,Human,Human
+spn,VAN_ED5,16,15,,Human,Human
+SVI,VAN_ED5,15,14,,Human,Human
+AEC,VAN_ED5,16,15,,Human,Human
+BCS,VAN_ED5,10,9,,Human,Human
+COR,VAN_ED5,17,16,,Human,Human
+ENT,VAN_ED5,12,11,,Human,Human
+STR,VAN_ED5,13,12,,Human,Human
+ENT,GEH_ED30,8,7,,Human,Human
+bca,DOR_ED10,30,29,,Human,Human
+AC-,DOR_ED10,22,49,,Human,Human
+HA-,DOR_ED10,23,22,,Human,Human
+PS-,DOR_ED10,22,49,Urinary tract infection,Human,Human
+EBC,DOR_ED10,21,23,,Human,Human
+ban,IPM_ED10,0,0,,Human,Human
+bca,IPM_ED10,29,28,,Human,Human
+mmo,IPM_ED10,17,49,,Human,Human
+ppm,IPM_ED10,29,28,,Human,Human
+AC-,IPM_ED10,21,23,,Human,Human
+BCS,IPM_ED10,30,29,,Human,Human
+ENT,IPM_ED10,21,49,,Human,Human
+HA-,IPM_ED10,20,19,,Human,Human
+MOR,IPM_ED10,19,49,,Human,Human
+PR-,IPM_ED10,19,49,,Human,Human
+PRV,IPM_ED10,19,49,,Human,Human
+PS-,IPM_ED10,20,49,,Human,Human
+EBC,IPM_ED10,19,21,,Human,Human
+ban,CLI_ED2,0,0,,Human,Human
+cpe,CLI_ED2,19,18,,Human,Human
+fne,CLI_ED2,30,29,,Human,Human
+pro,CLI_ED2,26,25,,Human,Human
+spn,CLI_ED2,19,18,,Human,Human
+SVI,CLI_ED2,19,18,,Human,Human
+BAC,CLI_ED2,10,9,,Human,Human
+BCS,CLI_ED2,17,16,,Human,Human
+COR,CLI_ED2,20,19,,Human,Human
+PRT,CLI_ED2,31,30,,Human,Human
+STA,CLI_ED2,22,21,,Human,Human
+STR,CLI_ED2,17,16,,Human,Human
+ban,LNZ_ED10,0,0,,Human,Human
+spn,LNZ_ED10,22,21,,Human,Human
+BCS,LNZ_ED10,22,21,,Human,Human
+COR,LNZ_ED10,25,24,,Human,Human
+ENT,LNZ_ED10,20,19,,Human,Human
+STA,LNZ_ED10,21,20,,Human,Human
+STR,LNZ_ED10,19,18,,Human,Human
+139,LVX_ED5,23,22,,Human,Human
+ban,LVX_ED5,0,0,,Human,Human
+bca,LVX_ED5,29,28,,Human,Human
+kki,LVX_ED5,28,27,,Human,Human
+pam,LVX_ED5,27,26,,Human,Human
+sau,LVX_ED5,22,49,,Human,Human
+sc+,LVX_ED5,22,49,,Human,Human
+spn,LVX_ED5,16,49,,Human,Human
+val,LVX_ED5,23,22,,Human,Human
+vel,LVX_ED5,23,22,,Human,Human
+vfl,LVX_ED5,23,22,,Human,Human
+vhi,LVX_ED5,23,22,,Human,Human
+vic,LVX_ED5,23,22,,Human,Human
+vin,LVX_ED5,23,22,,Human,Human
+vip,LVX_ED5,23,22,,Human,Human
+vo1,LVX_ED5,23,22,,Human,Human
+vog,LVX_ED5,23,22,,Human,Human
+vvu,LVX_ED5,23,22,,Human,Human
+vx1,LVX_ED5,23,22,,Human,Human
+SCN,LVX_ED5,24,49,,Human,Human
+AC-,LVX_ED5,20,22,,Human,Human
+AER,LVX_ED5,24,26,,Human,Human
+BCS,LVX_ED5,23,49,,Human,Human
+ENT,LVX_ED5,15,14,Urinary tract infection,Human,Human
+HA-,LVX_ED5,30,29,,Human,Human
+PS-,LVX_ED5,22,49,,Human,Human
+STR,LVX_ED5,17,49,,Human,Human
+EBC,LVX_ED5,19,22,,Human,Human
+139,MEM_ED10,24,23,,Human,Human
+ade,MEM_ED10,20,25,,Human,Human
+axy,MEM_ED10,20,25,,Human,Human
+ban,MEM_ED10,0,0,,Human,Human
+bca,MEM_ED10,33,32,,Human,Human
+cpe,MEM_ED10,25,24,,Human,Human
+fne,MEM_ED10,35,34,,Human,Human
+kki,MEM_ED10,30,29,,Human,Human
+lmo,MEM_ED10,26,25,,Human,Human
+pae,MEM_ED10,14,19,Non-meningitis,Human,Human
+pae,MEM_ED10,20,19,Meningitis,Human,Human
+ppm,MEM_ED10,24,23,,Human,Human
+pro,MEM_ED10,28,27,,Human,Human
+val,MEM_ED10,24,23,,Human,Human
+vel,MEM_ED10,24,23,,Human,Human
+vfl,MEM_ED10,24,23,,Human,Human
+vhi,MEM_ED10,24,23,,Human,Human
+vic,MEM_ED10,24,23,,Human,Human
+vin,MEM_ED10,24,23,,Human,Human
+vip,MEM_ED10,24,23,,Human,Human
+vo1,MEM_ED10,24,23,,Human,Human
+vog,MEM_ED10,24,23,,Human,Human
+vvu,MEM_ED10,24,23,,Human,Human
+vx1,MEM_ED10,24,23,,Human,Human
+AC-,MEM_ED10,15,20,Non-meningitis,Human,Human
+AC-,MEM_ED10,21,20,Meningitis,Human,Human
+AEC,MEM_ED10,31,30,,Human,Human
+BAC,MEM_ED10,28,27,,Human,Human
+BCS,MEM_ED10,25,24,,Human,Human
+HA-,MEM_ED10,20,19,Non-meningitis,Human,Human
+PRT,MEM_ED10,34,33,,Human,Human
+PS-,MEM_ED10,18,23,Non-meningitis,Human,Human
+EBC,MEM_ED10,16,21,Non-meningitis,Human,Human
+EBC,MEM_ED10,22,21,Meningitis,Human,Human
+bca,MNO_ED30,25,24,,Human,Human
+spn,MNO_ED30,24,23,,Human,Human
+HA-,MNO_ED30,24,23,,Human,Human
+STA,MNO_ED30,23,22,,Human,Human
+STR,MNO_ED30,23,22,,Human,Human
+bca,MFX_ED5,26,25,,Human,Human
+sau,MFX_ED5,25,24,,Human,Human
+sc+,MFX_ED5,25,24,,Human,Human
+spn,MFX_ED5,22,21,,Human,Human
+SCN,MFX_ED5,28,27,,Human,Human
+COR,MFX_ED5,25,24,,Human,Human
+HA-,MFX_ED5,28,27,,Human,Human
+STR,MFX_ED5,19,18,,Human,Human
+EBC,MFX_ED5,22,21,,Human,Human
+bca,NAL_ED30,23,22,Screen,Human,Human
+pam,NAL_ED30,23,22,Screen,Human,Human
+HA-,NAL_ED30,23,22,Screen,Human,Human
+bsb,NIT_ED100,15,14,Urinary tract infection,Human,Human
+eco,NIT_ED100,11,10,Urinary tract infection,Human,Human
+efa,NIT_ED100,15,14,Urinary tract infection,Human,Human
+sap,NIT_ED100,13,12,Urinary tract infection,Human,Human
+AEC,NIT_ED100,16,15,,Human,Human
+ban,NOR_ED10,0,0,Screen,Human,Human
+spn,NOR_ED10,10,9,Screen,Human,Human
+AEC,NOR_ED10,17,16,,Human,Human
+BCS,NOR_ED10,21,20,Screen,Human,Human
+ENT,NOR_ED10,12,11,Screen,Human,Human
+STA,NOR_ED10,17,16,Screen,Human,Human
+STR,NOR_ED10,12,11,Screen,Human,Human
+EBC,NOR_ED10,22,21,Urinary tract infection,Human,Human
+psd,OXA_ED1,20,19,Screen,Human,Human
+slc,OXA_ED1,20,19,Screen,Human,Human
+spn,OXA_ED1,0,19,Screen,Human,Human
+ssf,OXA_ED1,20,19,Screen,Human,Human
+bca,OFX_ED5,28,27,,Human,Human
+spn,OFX_ED5,0,0,,Human,Human
+HA-,OFX_ED5,30,29,,Human,Human
+EBC,OFX_ED5,22,23,,Human,Human
+cpe,PEN_ED1,15,14,,Human,Human
+fne,PEN_ED1,25,24,,Human,Human
+kki,PEN_ED1,25,24,,Human,Human
+lmo,PEN_ED1,13,12,Non-meningitis,Human,Human
+lmo,PEN_ED1,0,0,Meningitis,Human,Human
+pam,PEN_ED1,17,16,,Human,Human
+pro,PEN_ED1,24,23,,Human,Human
+sau,PEN_ED1,26,25,,Human,Human
+sc+,PEN_ED1,26,25,,Human,Human
+slu,PEN_ED1,26,25,,Human,Human
+spn,PEN_ED1,0,0,,Human,Human
+SVI,PEN_ED1,12,17,,Human,Human
+SVI,PEN_ED1,18,17,Screen,Human,Human
+AEC,PEN_ED1,21,20,,Human,Human
+COR,PEN_ED1,29,28,,Human,Human
+HA-,PEN_ED1,12,11,Screen,Human,Human
+PRT,PEN_ED1,20,19,,Human,Human
+STR,PEN_ED1,18,17,Non-meningitis,Human,Human
+STR,PEN_ED1,19,18,Meningitis,Human,Human
+139,TZP_ED30,26,25,,Human,Human
+ade,TZP_ED30,26,25,,Human,Human
+axy,TZP_ED30,26,25,,Human,Human
+bth,TZP_ED30,0,0,,Human,Human
+cpe,TZP_ED30,24,23,,Human,Human
+fne,TZP_ED30,32,31,,Human,Human
+pro,TZP_ED30,27,26,,Human,Human
+val,TZP_ED30,26,25,,Human,Human
+vel,TZP_ED30,26,25,,Human,Human
+vfl,TZP_ED30,26,25,,Human,Human
+vhi,TZP_ED30,26,25,,Human,Human
+vic,TZP_ED30,26,25,,Human,Human
+vin,TZP_ED30,26,25,,Human,Human
+vip,TZP_ED30,26,25,,Human,Human
+vo1,TZP_ED30,26,25,,Human,Human
+vog,TZP_ED30,26,25,,Human,Human
+vvu,TZP_ED30,26,25,,Human,Human
+vx1,TZP_ED30,26,25,,Human,Human
+BAC,TZP_ED30,20,19,,Human,Human
+HA-,TZP_ED30,27,26,,Human,Human
+PRT,TZP_ED30,26,25,,Human,Human
+PS-,TZP_ED30,18,49,,Human,Human
+EBC,TZP_ED30,20,19,,Human,Human
+PS-,PIP_ED30,18,49,,Human,Human
+EBC,PIP_ED30,20,19,,Human,Human
+kki,RIF_ED5,20,19,,Human,Human
+spn,RIF_ED5,22,21,,Human,Human
+AEC,RIF_ED5,25,24,,Human,Human
+COR,RIF_ED5,25,29,,Human,Human
+HA-,RIF_ED5,18,17,Prophylaxis,Human,Human
+STA,RIF_ED5,26,25,,Human,Human
+STR,RIF_ED5,21,20,,Human,Human
+spn,TEC_ED30,17,16,,Human,Human
+SVI,TEC_ED30,16,15,,Human,Human
+ENT,TEC_ED30,16,15,,Human,Human
+STR,TEC_ED30,15,14,,Human,Human
+bca,TLT_ED15,20,22,,Human,Human
+spn,TLT_ED15,20,22,,Human,Human
+HA-,TLT_ED15,0,0,,Human,Human
+STR,TLT_ED15,17,19,,Human,Human
+139,TCY_ED30,20,19,,Human,Human
+bca,TCY_ED30,26,25,,Human,Human
+caj,TCY_ED30,30,29,,Human,Human
+cco,TCY_ED30,30,29,,Human,Human
+kki,TCY_ED30,28,27,,Human,Human
+pam,TCY_ED30,24,23,Screen,Human,Human
+ppm,TCY_ED30,23,22,Screen,Human,Human
+spn,TCY_ED30,22,24,,Human,Human
+spn,TCY_ED30,25,24,Screen,Human,Human
+val,TCY_ED30,20,19,,Human,Human
+vel,TCY_ED30,20,19,,Human,Human
+vfl,TCY_ED30,20,19,,Human,Human
+vhi,TCY_ED30,20,19,,Human,Human
+vic,TCY_ED30,20,19,,Human,Human
+vin,TCY_ED30,20,19,,Human,Human
+vip,TCY_ED30,20,19,,Human,Human
+vo1,TCY_ED30,20,19,,Human,Human
+vog,TCY_ED30,20,19,,Human,Human
+vvu,TCY_ED30,20,19,,Human,Human
+vx1,TCY_ED30,20,19,,Human,Human
+COR,TCY_ED30,24,23,,Human,Human
+HA-,TCY_ED30,25,24,,Human,Human
+STA,TCY_ED30,19,21,,Human,Human
+STA,TCY_ED30,22,21,Screen,Human,Human
+STR,TCY_ED30,20,22,,Human,Human
+STR,TCY_ED30,23,22,Screen,Human,Human
+cdi,TGC_ED15,18,17,,Human,Human
+eco,TGC_ED15,18,17,,Human,Human
+efa,TGC_ED15,20,19,,Human,Human
+efm,TGC_ED15,22,21,,Human,Human
+ENT,TGC_ED15,18,17,,Human,Human
+STA,TGC_ED15,19,18,,Human,Human
+STR,TGC_ED15,19,18,,Human,Human
+PS-,TCC_ED75,18,49,,Human,Human
+EBC,TCC_ED75,20,22,,Human,Human
+sau,TOB_ED10,18,17,,Human,Human
+sc+,TOB_ED10,18,17,,Human,Human
+SCN,TOB_ED10,20,19,,Human,Human
+AC-,TOB_ED10,17,16,,Human,Human
+AC-,TOB_ED10,17,16,Urinary tract infection,Human,Human
+PS-,TOB_ED10,18,17,,Human,Human
+PS-,TOB_ED10,18,17,Urinary tract infection,Human,Human
+EBC,TOB_ED10,16,15,,Human,Human
+EBC,TOB_ED10,16,15,Urinary tract infection,Human,Human
+ENT,TMP_ED5,21,49,Urinary tract infection,Human,Human
+STA,TMP_ED5,14,13,Urinary tract infection,Human,Human
+EBC,TMP_ED5,15,14,Urinary tract infection,Human,Human
+139,SXT_ED1_2,18,17,,Human,Human
+ade,SXT_ED1_2,26,25,,Human,Human
+axy,SXT_ED1_2,26,25,,Human,Human
+bca,SXT_ED1_2,15,17,,Human,Human
+kki,SXT_ED1_2,28,27,,Human,Human
+lmo,SXT_ED1_2,29,28,,Human,Human
+pam,SXT_ED1_2,23,22,,Human,Human
+pma,SXT_ED1_2,16,49,,Human,Human
+ppm,SXT_ED1_2,17,49,,Human,Human
+spn,SXT_ED1_2,10,12,,Human,Human
+val,SXT_ED1_2,18,17,,Human,Human
+vel,SXT_ED1_2,18,17,,Human,Human
+vfl,SXT_ED1_2,18,17,,Human,Human
+vhi,SXT_ED1_2,18,17,,Human,Human
+vic,SXT_ED1_2,18,17,,Human,Human
+vin,SXT_ED1_2,18,17,,Human,Human
+vip,SXT_ED1_2,18,17,,Human,Human
+vo1,SXT_ED1_2,18,17,,Human,Human
+vog,SXT_ED1_2,18,17,,Human,Human
+vvu,SXT_ED1_2,18,17,,Human,Human
+vx1,SXT_ED1_2,18,17,,Human,Human
+AC-,SXT_ED1_2,11,13,,Human,Human
+AER,SXT_ED1_2,16,18,,Human,Human
+ENT,SXT_ED1_2,21,49,,Human,Human
+HA-,SXT_ED1_2,20,22,,Human,Human
+STA,SXT_ED1_2,14,16,,Human,Human
+STR,SXT_ED1_2,15,17,,Human,Human
+EBC,SXT_ED1_2,11,13,,Human,Human
+eco,FOS_ED200,24,23,,Human,Human
+eco,FOS_ED200,24,23,Urinary tract infection,Human,Human
+EBC,FOS_ED200,21,20,,Human,Human
+STA,FUS_ED10,24,23,,Human,Human
+ENT,QDA_ED15,20,21,,Human,Human
+STA,QDA_ED15,18,20,,Human,Human
+EBC,CFR_ED30,12,11,Urinary tract infection,Human,Human
+EBC,CZO_ED30,20,49,Urinary tract infection,Human,Human
+spn,CEC_ED30,28,49,,Human,Human
+EBC,LEX_ED30,14,13,Urinary tract infection,Human,Human
+bca,FEP_ED30,20,19,,Human,Human
+SVI,FEP_ED30,25,24,,Human,Human
+AER,FEP_ED30,24,26,,Human,Human
+HA-,FEP_ED30,28,27,,Human,Human
+PS-,FEP_ED30,21,49,,Human,Human
+EBC,FEP_ED30,24,26,,Human,Human
+psd,FOX_ED30,0,0,Screen,Human,Human
+sau,FOX_ED30,22,21,Screen,Human,Human
+sep,FOX_ED30,27,26,Screen,Human,Human
+slc,FOX_ED30,0,0,Screen,Human,Human
+slu,FOX_ED30,27,26,Screen,Human,Human
+ssf,FOX_ED30,0,0,Screen,Human,Human
+SCN,FOX_ED30,22,21,Screen,Human,Human
+EBC,FOX_ED30,19,18,Screen,Human,Human
+139,CTX_ED5,21,20,,Human,Human
+bca,CTX_ED5,17,19,,Human,Human
+kki,CTX_ED5,27,26,,Human,Human
+pam,CTX_ED5,26,25,,Human,Human
+val,CTX_ED5,21,20,,Human,Human
+vel,CTX_ED5,21,20,,Human,Human
+vfl,CTX_ED5,21,20,,Human,Human
+vhi,CTX_ED5,21,20,,Human,Human
+vic,CTX_ED5,21,20,,Human,Human
+vin,CTX_ED5,21,20,,Human,Human
+vip,CTX_ED5,21,20,,Human,Human
+vo1,CTX_ED5,21,20,,Human,Human
+vog,CTX_ED5,21,20,,Human,Human
+vvu,CTX_ED5,21,20,,Human,Human
+vx1,CTX_ED5,21,20,,Human,Human
+SVI,CTX_ED5,23,22,,Human,Human
+HA-,CTX_ED5,27,26,Non-meningitis,Human,Human
+HA-,CTX_ED5,27,26,Meningitis,Human,Human
+EBC,CTX_ED5,17,19,Non-meningitis,Human,Human
+EBC,CTX_ED5,20,19,Meningitis,Human,Human
+139,CAZ_ED10,22,21,,Human,Human
+ppm,CAZ_ED10,18,49,,Human,Human
+val,CAZ_ED10,22,21,,Human,Human
+vel,CAZ_ED10,22,21,,Human,Human
+vfl,CAZ_ED10,22,21,,Human,Human
+vhi,CAZ_ED10,22,21,,Human,Human
+vic,CAZ_ED10,22,21,,Human,Human
+vin,CAZ_ED10,22,21,,Human,Human
+vip,CAZ_ED10,22,21,,Human,Human
+vo1,CAZ_ED10,22,21,,Human,Human
+vog,CAZ_ED10,22,21,,Human,Human
+vvu,CAZ_ED10,22,21,,Human,Human
+vx1,CAZ_ED10,22,21,,Human,Human
+AER,CAZ_ED10,21,23,,Human,Human
+PS-,CAZ_ED10,17,49,,Human,Human
+EBC,CAZ_ED10,19,21,,Human,Human
+sau,BPR_ED5,18,16,,Human,Human
+sc+,BPR_ED5,18,16,,Human,Human
+EBC,BPR_ED5,23,22,,Human,Human
+bca,CRO_ED30,21,23,,Human,Human
+kki,CRO_ED30,30,29,,Human,Human
+SVI,CRO_ED30,27,26,,Human,Human
+HA-,CRO_ED30,32,31,Non-meningitis,Human,Human
+HA-,CRO_ED30,32,31,Meningitis,Human,Human
+EBC,CRO_ED30,22,24,Non-meningitis,Human,Human
+EBC,CRO_ED30,25,24,Meningitis,Human,Human
+bca,CXM_ED30,21,49,Oral,Human,Human
+bca,CXM_ED30,18,20,Intravenous,Human,Human
+kki,CXM_ED30,29,28,,Human,Human
+SVI,CXM_ED30,26,25,,Human,Human
+HA-,CXM_ED30,27,49,Oral,Human,Human
+HA-,CXM_ED30,25,26,Intravenous,Human,Human
+EBC,CXM_ED30,19,18,Urinary tract infection,Human,Human
+EBC,CXM_ED30,19,49,Intravenous,Human,Human
+139,CIP_ED5,23,22,,Human,Human
+ban,CIP_ED5,0,0,,Human,Human
+bca,CIP_ED5,31,30,,Human,Human
+caj,CIP_ED5,26,49,,Human,Human
+cco,CIP_ED5,26,49,,Human,Human
+kki,CIP_ED5,28,27,,Human,Human
+pam,CIP_ED5,27,26,,Human,Human
+sau,CIP_ED5,21,49,,Human,Human
+sc+,CIP_ED5,21,49,,Human,Human
+spn,CIP_ED5,0,0,,Human,Human
+val,CIP_ED5,23,22,,Human,Human
+vel,CIP_ED5,23,22,,Human,Human
+vfl,CIP_ED5,23,22,,Human,Human
+vhi,CIP_ED5,23,22,,Human,Human
+vic,CIP_ED5,23,22,,Human,Human
+vin,CIP_ED5,23,22,,Human,Human
+vip,CIP_ED5,23,22,,Human,Human
+vo1,CIP_ED5,23,22,,Human,Human
+vog,CIP_ED5,23,22,,Human,Human
+vvu,CIP_ED5,23,22,,Human,Human
+vx1,CIP_ED5,23,22,,Human,Human
+SCN,CIP_ED5,24,49,,Human,Human
+AC-,CIP_ED5,21,49,,Human,Human
+AEC,CIP_ED5,21,20,,Human,Human
+AER,CIP_ED5,24,26,,Human,Human
+BCS,CIP_ED5,23,49,,Human,Human
+COR,CIP_ED5,25,49,,Human,Human
+ENT,CIP_ED5,15,14,Urinary tract infection,Human,Human
+HA-,CIP_ED5,30,29,,Human,Human
+PS-,CIP_ED5,26,49,,Human,Human
+EBC,CIP_ED5,22,24,,Human,Human
+139,ERY_ED15,12,11,,Human,Human
+ban,ERY_ED15,0,0,,Human,Human
+bca,ERY_ED15,20,22,,Human,Human
+caj,ERY_ED15,20,19,,Human,Human
+cco,ERY_ED15,24,23,,Human,Human
+kki,ERY_ED15,20,19,,Human,Human
+lmo,ERY_ED15,25,24,,Human,Human
+spn,ERY_ED15,19,21,,Human,Human
+val,ERY_ED15,12,11,,Human,Human
+vel,ERY_ED15,12,11,,Human,Human
+vfl,ERY_ED15,12,11,,Human,Human
+vhi,ERY_ED15,12,11,,Human,Human
+vic,ERY_ED15,12,11,,Human,Human
+vin,ERY_ED15,12,11,,Human,Human
+vip,ERY_ED15,12,11,,Human,Human
+vo1,ERY_ED15,12,11,,Human,Human
+vog,ERY_ED15,12,11,,Human,Human
+vvu,ERY_ED15,12,11,,Human,Human
+vx1,ERY_ED15,12,11,,Human,Human
+BCS,ERY_ED15,24,23,,Human,Human
+HA-,ERY_ED15,0,0,,Human,Human
+STA,ERY_ED15,18,20,,Human,Human
+STA,ERY_ED15,21,20,Screen,Human,Human
+STR,ERY_ED15,18,20,,Human,Human
+bca,ETP_ED10,29,28,,Human,Human
+HA-,ETP_ED10,23,22,,Human,Human
+EBC,ETP_ED10,25,24,,Human,Human
+HA-,CPD_ED10,26,25,,Human,Human
+EBC,CPD_ED10,21,20,Urinary tract infection,Human,Human
+HA-,CTB_ED30,25,24,,Human,Human
+EBC,CTB_ED30,23,22,Urinary tract infection,Human,Human
+AC-,COL_EM,2,4,,Human,Human
+PS-,COL_EM,4,8,,Human,Human
+EBC,COL_EM,2,4,,Human,Human
+139,AZM_EM,4,8,,Human,Human
+bca,AZM_EM,25,1,,Human,Human
+kki,AZM_EM,25,5,,Human,Human
+spn,AZM_EM,25,1,,Human,Human
+val,AZM_EM,4,8,,Human,Human
+vel,AZM_EM,4,8,,Human,Human
+vfl,AZM_EM,4,8,,Human,Human
+vhi,AZM_EM,4,8,,Human,Human
+vic,AZM_EM,4,8,,Human,Human
+vin,AZM_EM,4,8,,Human,Human
+vip,AZM_EM,4,8,,Human,Human
+vo1,AZM_EM,4,8,,Human,Human
+vog,AZM_EM,4,8,,Human,Human
+vvu,AZM_EM,4,8,,Human,Human
+vx1,AZM_EM,4,8,,Human,Human
+HA-,AZM_EM,4,8,,Human,Human
+STA,AZM_EM,2,4,,Human,Human
+STR,AZM_EM,25,1,,Human,Human
+AER,ATM_EM,1,8,,Human,Human
+PS-,ATM_EM,1,32,,Human,Human
+EBC,ATM_EM,1,8,,Human,Human
+Gen,ATM_EM,4,16,,Human,Human
+sau,AMK_EM,16,32,,Human,Human
+sc+,AMK_EM,8,16,,Human,Human
+SCN,AMK_EM,16,32,,Human,Human
+AC-,AMK_EM,8,16,,Human,Human
+AC-,AMK_EM,8,16,Urinary tract infection,Human,Human
+PS-,AMK_EM,16,32,,Human,Human
+PS-,AMK_EM,16,32,Urinary tract infection,Human,Human
+EBC,AMK_EM,8,16,,Human,Human
+EBC,AMK_EM,8,16,Urinary tract infection,Human,Human
+Gen,AMK_EM,1,2,,Human,Human
+NME,AMX_EM,125,2,Non-meningitis,Human,Human
+NME,AMX_EM,0,0,Meningitis,Human,Human
+hpy,AMX_EM,125,25,Oral,Human,Human
+kki,AMX_EM,125,25,,Human,Human
+pam,AMX_EM,1,2,,Human,Human
+spn,AMX_EM,0,0,Non-meningitis,Human,Human
+spn,AMX_EM,5,1,Meningitis,Human,Human
+spn,AMX_EM,5,2,Oral,Human,Human
+SVI,AMX_EM,5,4,,Human,Human
+ENT,AMX_EM,4,16,,Human,Human
+HA-,AMX_EM,2,4,Non-meningitis,Human,Human
+HA-,AMX_EM,0,0,Meningitis,Human,Human
+HA-,AMX_EM,1,4,Oral,Human,Human
+EBC,AMX_EM,8,16,,Human,Human
+AN-,AMX_EM,5,4,,Human,Human
+AN+,AMX_EM,4,16,,Human,Human
+Gen,AMX_EM,2,16,,Human,Human
+bca,AMC_EM,1,2,,Human,Human
+pam,AMC_EM,1,2,,Human,Human
+ppm,AMC_EM,1,16,,Human,Human
+spn,AMC_EM,5,2,Oral,Human,Human
+ENT,AMC_EM,4,16,,Human,Human
+HA-,AMC_EM,1,4,Oral,Human,Human
+HA-,AMC_EM,2,4,Intravenous,Human,Human
+EBC,AMC_EM,8,16,,Human,Human
+EBC,AMC_EM,32,64,Urinary tract infection,Human,Human
+AN-,AMC_EM,4,16,,Human,Human
+AN+,AMC_EM,4,16,,Human,Human
+Gen,AMC_EM,2,16,,Human,Human
+NME,AMP_EM,125,2,Non-meningitis,Human,Human
+NME,AMP_EM,0,0,Meningitis,Human,Human
+kki,AMP_EM,64,12,,Human,Human
+lmo,AMP_EM,1,2,Intravenous,Human,Human
+pam,AMP_EM,1,2,,Human,Human
+spn,AMP_EM,5,2,Non-meningitis,Human,Human
+spn,AMP_EM,5,1,Meningitis,Human,Human
+SVI,AMP_EM,5,4,,Human,Human
+AEC,AMP_EM,25,5,,Human,Human
+ENT,AMP_EM,4,16,,Human,Human
+HA-,AMP_EM,1,2,Non-meningitis,Human,Human
+HA-,AMP_EM,0,0,Meningitis,Human,Human
+EBC,AMP_EM,8,16,,Human,Human
+AN-,AMP_EM,5,4,,Human,Human
+AN+,AMP_EM,4,16,,Human,Human
+Gen,AMP_EM,2,16,,Human,Human
+bca,SAM_EM,1,2,,Human,Human
+ENT,SAM_EM,4,16,,Human,Human
+HA-,SAM_EM,1,2,,Human,Human
+EBC,SAM_EM,8,16,,Human,Human
+AN-,SAM_EM,4,16,,Human,Human
+AN+,SAM_EM,4,16,,Human,Human
+Gen,SAM_EM,2,16,,Human,Human
+ban,VAN_EM,0,0,,Human,Human
+cdf,VAN_EM,2,4,,Human,Human
+cpe,VAN_EM,2,4,,Human,Human
+pro,VAN_EM,2,4,,Human,Human
+sau,VAN_EM,2,4,,Human,Human
+sc+,VAN_EM,2,4,,Human,Human
+spn,VAN_EM,2,4,,Human,Human
+SCN,VAN_EM,4,8,,Human,Human
+SVI,VAN_EM,2,4,,Human,Human
+AEC,VAN_EM,1,2,,Human,Human
+BCS,VAN_EM,2,4,,Human,Human
+COR,VAN_EM,2,4,,Human,Human
+ENT,VAN_EM,4,8,,Human,Human
+STR,VAN_EM,2,4,,Human,Human
+AN+,VAN_EM,2,4,,Human,Human
+SVI,GEH_EM,128,129,,Human,Human
+ENT,GEH_EM,128,129,,Human,Human
+sau,GEN_EM,2,4,,Human,Human
+sc+,GEN_EM,1,2,,Human,Human
+SCN,GEN_EM,2,4,,Human,Human
+SVI,GEN_EM,128,129,,Human,Human
+AC-,GEN_EM,4,8,,Human,Human
+AC-,GEN_EM,4,8,Urinary tract infection,Human,Human
+ENT,GEN_EM,128,129,,Human,Human
+EBC,GEN_EM,2,4,,Human,Human
+EBC,GEN_EM,2,4,Urinary tract infection,Human,Human
+Gen,GEN_EM,5,1,,Human,Human
+bca,DOR_EM,1,2,,Human,Human
+spn,DOR_EM,1,2,,Human,Human
+SVI,DOR_EM,1,2,,Human,Human
+AC-,DOR_EM,1,4,,Human,Human
+HA-,DOR_EM,1,2,,Human,Human
+PS-,DOR_EM,1,4,Urinary tract infection,Human,Human
+EBC,DOR_EM,1,4,,Human,Human
+AN-,DOR_EM,1,2,,Human,Human
+AN+,DOR_EM,1,2,,Human,Human
+ban,IPM_EM,0,0,,Human,Human
+bca,IPM_EM,2,4,,Human,Human
+mmo,IPM_EM,1,8,,Human,Human
+ppm,IPM_EM,2,4,,Human,Human
+spn,IPM_EM,2,4,,Human,Human
+SVI,IPM_EM,2,4,,Human,Human
+AC-,IPM_EM,2,8,,Human,Human
+BCS,IPM_EM,5,1,,Human,Human
+ENT,IPM_EM,1,8,,Human,Human
+HA-,IPM_EM,2,4,,Human,Human
+MOR,IPM_EM,1,8,,Human,Human
+PR-,IPM_EM,1,8,,Human,Human
+PRV,IPM_EM,1,8,,Human,Human
+PS-,IPM_EM,1,8,,Human,Human
+EBC,IPM_EM,2,8,,Human,Human
+AN-,IPM_EM,2,8,,Human,Human
+AN+,IPM_EM,2,8,,Human,Human
+Gen,IPM_EM,2,16,,Human,Human
+bca,CLR_EM,25,1,,Human,Human
+hpy,CLR_EM,25,1,,Human,Human
+kki,CLR_EM,5,1,,Human,Human
+spn,CLR_EM,25,1,,Human,Human
+HA-,CLR_EM,32,64,,Human,Human
+STA,CLR_EM,1,4,,Human,Human
+STR,CLR_EM,25,1,,Human,Human
+ban,CLI_EM,0,0,,Human,Human
+cpe,CLI_EM,25,5,,Human,Human
+fne,CLI_EM,25,5,,Human,Human
+pro,CLI_EM,25,5,,Human,Human
+spn,CLI_EM,5,1,,Human,Human
+SVI,CLI_EM,5,1,,Human,Human
+BAC,CLI_EM,4,8,,Human,Human
+BCS,CLI_EM,1,2,,Human,Human
+COR,CLI_EM,5,1,,Human,Human
+PRT,CLI_EM,25,5,,Human,Human
+STA,CLI_EM,25,5,,Human,Human
+STR,CLI_EM,5,1,,Human,Human
+AN-,CLI_EM,4,8,,Human,Human
+AN+,CLI_EM,4,8,,Human,Human
+NME,CHL_EM,2,4,Meningitis,Human,Human
+ppm,CHL_EM,1,16,,Human,Human
+spn,CHL_EM,8,16,,Human,Human
+HA-,CHL_EM,2,4,,Human,Human
+STA,CHL_EM,8,16,,Human,Human
+STR,CHL_EM,8,16,,Human,Human
+EBC,CHL_EM,8,16,,Human,Human
+AN-,CHL_EM,8,16,,Human,Human
+AN+,CHL_EM,8,16,,Human,Human
+ppm,CHL_ED30,22,49,,Human,Human
+spn,CHL_ED30,21,20,,Human,Human
+HA-,CHL_ED30,28,27,,Human,Human
+STA,CHL_ED30,18,17,,Human,Human
+STR,CHL_ED30,19,18,,Human,Human
+EBC,CHL_ED30,17,16,,Human,Human
+139,LVX_EM,25,5,,Human,Human
+ban,LVX_EM,0,0,,Human,Human
+bca,LVX_EM,125,25,,Human,Human
+hpy,LVX_EM,1,2,,Human,Human
+kki,LVX_EM,125,25,,Human,Human
+pam,LVX_EM,64,12,,Human,Human
+sau,LVX_EM,1,2,,Human,Human
+sc+,LVX_EM,1,2,,Human,Human
+spn,LVX_EM,1,4,,Human,Human
+val,LVX_EM,25,5,,Human,Human
+vel,LVX_EM,25,5,,Human,Human
+vfl,LVX_EM,25,5,,Human,Human
+vhi,LVX_EM,25,5,,Human,Human
+vic,LVX_EM,25,5,,Human,Human
+vin,LVX_EM,25,5,,Human,Human
+vip,LVX_EM,25,5,,Human,Human
+vo1,LVX_EM,25,5,,Human,Human
+vog,LVX_EM,25,5,,Human,Human
+vvu,LVX_EM,25,5,,Human,Human
+vx1,LVX_EM,25,5,,Human,Human
+SCN,LVX_EM,1,2,,Human,Human
+AC-,LVX_EM,5,2,,Human,Human
+AEC,LVX_EM,2,4,,Human,Human
+AER,LVX_EM,5,2,,Human,Human
+BCS,LVX_EM,1,2,,Human,Human
+ENT,LVX_EM,4,8,Urinary tract infection,Human,Human
+HA-,LVX_EM,64,12,,Human,Human
+PS-,LVX_EM,1,4,,Human,Human
+STR,LVX_EM,1,4,,Human,Human
+EBC,LVX_EM,5,2,,Human,Human
+Gen,LVX_EM,5,1,,Human,Human
+ban,LNZ_EM,0,0,,Human,Human
+spn,LNZ_EM,2,4,,Human,Human
+BCS,LNZ_EM,2,4,,Human,Human
+COR,LNZ_EM,2,4,,Human,Human
+ENT,LNZ_EM,4,8,,Human,Human
+STA,LNZ_EM,4,8,,Human,Human
+STR,LNZ_EM,2,4,,Human,Human
+Gen,LNZ_EM,2,4,,Human,Human
+NME,MEM_EM,25,5,,Human,Human
+139,MEM_EM,5,1,,Human,Human
+ade,MEM_EM,1,8,,Human,Human
+axy,MEM_EM,1,8,,Human,Human
+ban,MEM_EM,0,0,,Human,Human
+bca,MEM_EM,2,4,,Human,Human
+cpe,MEM_EM,125,25,,Human,Human
+fne,MEM_EM,32,6,,Human,Human
+kki,MEM_EM,32,6,,Human,Human
+lmo,MEM_EM,25,5,,Human,Human
+pae,MEM_EM,2,16,Non-meningitis,Human,Human
+pae,MEM_EM,2,4,Meningitis,Human,Human
+ppm,MEM_EM,2,4,,Human,Human
+pro,MEM_EM,125,25,,Human,Human
+spn,MEM_EM,2,4,Non-meningitis,Human,Human
+spn,MEM_EM,25,5,Meningitis,Human,Human
+val,MEM_EM,5,1,,Human,Human
+vel,MEM_EM,5,1,,Human,Human
+vfl,MEM_EM,5,1,,Human,Human
+vhi,MEM_EM,5,1,,Human,Human
+vic,MEM_EM,5,1,,Human,Human
+vin,MEM_EM,5,1,,Human,Human
+vip,MEM_EM,5,1,,Human,Human
+vo1,MEM_EM,5,1,,Human,Human
+vog,MEM_EM,5,1,,Human,Human
+vvu,MEM_EM,5,1,,Human,Human
+vx1,MEM_EM,5,1,,Human,Human
+SVI,MEM_EM,2,4,,Human,Human
+AC-,MEM_EM,2,16,Non-meningitis,Human,Human
+AC-,MEM_EM,2,4,Meningitis,Human,Human
+AEC,MEM_EM,25,5,,Human,Human
+BAC,MEM_EM,1,2,,Human,Human
+BCS,MEM_EM,25,5,,Human,Human
+HA-,MEM_EM,2,4,Non-meningitis,Human,Human
+HA-,MEM_EM,25,5,Meningitis,Human,Human
+PRT,MEM_EM,25,5,,Human,Human
+PS-,MEM_EM,2,16,Non-meningitis,Human,Human
+EBC,MEM_EM,2,16,Non-meningitis,Human,Human
+EBC,MEM_EM,2,4,Meningitis,Human,Human
+AN-,MEM_EM,2,16,,Human,Human
+AN+,MEM_EM,2,16,,Human,Human
+Gen,MEM_EM,2,16,,Human,Human
+cdf,MTR_EM,2,4,,Human,Human
+cpe,MTR_EM,4,8,,Human,Human
+fne,MTR_EM,5,1,,Human,Human
+hpy,MTR_EM,8,16,,Human,Human
+BAC,MTR_EM,4,8,,Human,Human
+PRT,MTR_EM,4,8,,Human,Human
+AN-,MTR_EM,4,8,,Human,Human
+AN+,MTR_EM,4,8,,Human,Human
+eco,MEC_EM,8,16,Urinary tract infection,Human,Human
+pmi,MEC_EM,8,16,Urinary tract infection,Human,Human
+CI-,MEC_EM,8,16,Urinary tract infection,Human,Human
+EN-,MEC_EM,8,16,Urinary tract infection,Human,Human
+KL-,MEC_EM,8,16,Urinary tract infection,Human,Human
+RAO,MEC_EM,8,16,Urinary tract infection,Human,Human
+eco,MEC_ED10,15,14,Urinary tract infection,Human,Human
+pmi,MEC_ED10,15,14,Urinary tract infection,Human,Human
+CI-,MEC_ED10,15,14,Urinary tract infection,Human,Human
+EN-,MEC_ED10,15,14,Urinary tract infection,Human,Human
+KL-,MEC_ED10,15,14,Urinary tract infection,Human,Human
+RAO,MEC_ED10,15,14,Urinary tract infection,Human,Human
+NME,MNO_EM,1,2,Prophylaxis,Human,Human
+bca,MNO_EM,1,2,,Human,Human
+spn,MNO_EM,5,1,,Human,Human
+HA-,MNO_EM,1,2,,Human,Human
+STA,MNO_EM,5,1,,Human,Human
+STR,MNO_EM,5,1,,Human,Human
+bca,MFX_EM,25,5,,Human,Human
+sau,MFX_EM,25,5,,Human,Human
+sc+,MFX_EM,25,5,,Human,Human
+spn,MFX_EM,5,1,,Human,Human
+SCN,MFX_EM,25,5,,Human,Human
+COR,MFX_EM,5,1,,Human,Human
+HA-,MFX_EM,125,25,,Human,Human
+STR,MFX_EM,5,2,,Human,Human
+EBC,MFX_EM,25,5,,Human,Human
+Gen,MFX_EM,25,5,,Human,Human
+bsb,NIT_EM,64,128,Urinary tract infection,Human,Human
+eco,NIT_EM,64,128,Urinary tract infection,Human,Human
+efa,NIT_EM,64,128,Urinary tract infection,Human,Human
+AEC,NIT_EM,16,32,,Human,Human
+STA,NIT_EM,64,128,Urinary tract infection,Human,Human
+EBC,NOR_EM,5,1,Urinary tract infection,Human,Human
+Gen,NOR_EM,0,0,,Human,Human
+sap,OXA_EM,2,4,,Human,Human
+sau,OXA_EM,2,4,,Human,Human
+sc+,OXA_EM,2,4,,Human,Human
+slu,OXA_EM,2,4,,Human,Human
+SCN,OXA_EM,25,5,,Human,Human
+sau,ORI_EM,125,25,,Human,Human
+sc+,ORI_EM,125,25,,Human,Human
+SVI,ORI_EM,25,5,,Human,Human
+STR,ORI_EM,25,5,,Human,Human
+Gen,ORI_EM,125,25,,Human,Human
+bca,OFX_EM,25,5,,Human,Human
+ngo,OFX_EM,125,5,,Human,Human
+spn,OFX_EM,0,0,,Human,Human
+HA-,OFX_EM,64,12,,Human,Human
+EBC,OFX_EM,25,1,,Human,Human
+Gen,OFX_EM,25,1,,Human,Human
+NME,PEN_EM,25,5,,Human,Human
+cpe,PEN_EM,5,1,,Human,Human
+fne,PEN_EM,64,12,,Human,Human
+kki,PEN_EM,32,6,,Human,Human
+lmo,PEN_EM,1,2,Non-meningitis,Human,Human
+lmo,PEN_EM,0,0,Meningitis,Human,Human
+ngo,PEN_EM,64,2,,Human,Human
+pam,PEN_EM,5,1,,Human,Human
+pro,PEN_EM,64,12,,Human,Human
+sau,PEN_EM,125,25,,Human,Human
+sc+,PEN_EM,125,25,,Human,Human
+slu,PEN_EM,125,25,,Human,Human
+spn,PEN_EM,64,4,Non-meningitis,Human,Human
+spn,PEN_EM,64,12,Meningitis,Human,Human
+SVI,PEN_EM,25,4,,Human,Human
+SVI,PEN_EM,25,5,Screen,Human,Human
+AEC,PEN_EM,125,25,,Human,Human
+COR,PEN_EM,125,25,,Human,Human
+PRT,PEN_EM,5,1,,Human,Human
+STR,PEN_EM,25,5,Non-meningitis,Human,Human
+STR,PEN_EM,125,25,Meningitis,Human,Human
+AN-,PEN_EM,25,1,,Human,Human
+AN+,PEN_EM,25,1,,Human,Human
+Gen,PEN_EM,25,4,,Human,Human
+PS-,PIP_EM,1,32,,Human,Human
+EBC,PIP_EM,8,16,,Human,Human
+AN-,PIP_EM,16,32,,Human,Human
+AN+,PIP_EM,8,32,,Human,Human
+Gen,PIP_EM,4,32,,Human,Human
+139,TZP_EM,1,2,,Human,Human
+ade,TZP_EM,4,8,,Human,Human
+axy,TZP_EM,4,8,,Human,Human
+bth,TZP_EM,0,0,,Human,Human
+cpe,TZP_EM,5,1,,Human,Human
+fne,TZP_EM,5,1,,Human,Human
+pro,TZP_EM,25,5,,Human,Human
+val,TZP_EM,1,2,,Human,Human
+vel,TZP_EM,1,2,,Human,Human
+vfl,TZP_EM,1,2,,Human,Human
+vhi,TZP_EM,1,2,,Human,Human
+vic,TZP_EM,1,2,,Human,Human
+vin,TZP_EM,1,2,,Human,Human
+vip,TZP_EM,1,2,,Human,Human
+vo1,TZP_EM,1,2,,Human,Human
+vog,TZP_EM,1,2,,Human,Human
+vvu,TZP_EM,1,2,,Human,Human
+vx1,TZP_EM,1,2,,Human,Human
+BAC,TZP_EM,8,16,,Human,Human
+HA-,TZP_EM,25,5,,Human,Human
+PRT,TZP_EM,5,1,,Human,Human
+PS-,TZP_EM,1,32,,Human,Human
+EBC,TZP_EM,8,16,,Human,Human
+AN-,TZP_EM,8,32,,Human,Human
+AN+,TZP_EM,8,32,,Human,Human
+Gen,TZP_EM,4,32,,Human,Human
+NME,RIF_EM,25,5,Prophylaxis,Human,Human
+hpy,RIF_EM,1,2,,Human,Human
+kki,RIF_EM,5,1,,Human,Human
+spn,RIF_EM,125,25,,Human,Human
+AEC,RIF_EM,125,25,,Human,Human
+COR,RIF_EM,64,1,,Human,Human
+HA-,RIF_EM,1,2,Prophylaxis,Human,Human
+STA,RIF_EM,64,12,,Human,Human
+STR,RIF_EM,64,12,,Human,Human
+sau,TEC_EM,2,4,,Human,Human
+sc+,TEC_EM,2,4,,Human,Human
+spn,TEC_EM,2,4,,Human,Human
+SCN,TEC_EM,4,8,,Human,Human
+SVI,TEC_EM,2,4,,Human,Human
+ENT,TEC_EM,2,4,,Human,Human
+STR,TEC_EM,2,4,,Human,Human
+bca,TLT_EM,25,1,,Human,Human
+spn,TLT_EM,25,1,,Human,Human
+HA-,TLT_EM,8,16,,Human,Human
+STR,TLT_EM,25,1,,Human,Human
+NME,TCY_EM,2,4,Screen,Human,Human
+bca,TCY_EM,2,4,,Human,Human
+caj,TCY_EM,2,4,,Human,Human
+cco,TCY_EM,2,4,,Human,Human
+hpy,TCY_EM,1,2,,Human,Human
+kki,TCY_EM,5,1,,Human,Human
+ngo,TCY_EM,5,2,,Human,Human
+spn,TCY_EM,1,4,,Human,Human
+spn,TCY_EM,1,2,Screen,Human,Human
+COR,TCY_EM,2,4,,Human,Human
+HA-,TCY_EM,2,4,,Human,Human
+STA,TCY_EM,1,4,,Human,Human
+STA,TCY_EM,1,2,Screen,Human,Human
+STR,TCY_EM,1,4,,Human,Human
+STR,TCY_EM,1,2,Screen,Human,Human
+PS-,TCC_EM,1,32,,Human,Human
+EBC,TCC_EM,8,32,,Human,Human
+AN-,TCC_EM,8,32,,Human,Human
+AN+,TCC_EM,8,32,,Human,Human
+Gen,TCC_EM,8,32,,Human,Human
+sau,TOB_EM,2,4,,Human,Human
+sc+,TOB_EM,1,2,,Human,Human
+SCN,TOB_EM,2,4,,Human,Human
+AC-,TOB_EM,4,8,,Human,Human
+AC-,TOB_EM,4,8,Urinary tract infection,Human,Human
+PS-,TOB_EM,2,4,,Human,Human
+PS-,TOB_EM,2,4,Urinary tract infection,Human,Human
+EBC,TOB_EM,2,4,,Human,Human
+EBC,TOB_EM,2,4,Urinary tract infection,Human,Human
+Gen,TOB_EM,5,1,,Human,Human
+bsb,TMP_EM,2,4,Urinary tract infection,Human,Human
+ENT,TMP_EM,32,2,Urinary tract infection,Human,Human
+STA,TMP_EM,4,8,Urinary tract infection,Human,Human
+EBC,TMP_EM,4,8,Urinary tract infection,Human,Human
+139,SXT_EM,5,1,,Human,Human
+ade,SXT_EM,125,25,,Human,Human
+axy,SXT_EM,125,25,,Human,Human
+bca,SXT_EM,5,2,,Human,Human
+kki,SXT_EM,25,5,,Human,Human
+lmo,SXT_EM,64,12,,Human,Human
+pam,SXT_EM,25,5,,Human,Human
+pma,SXT_EM,1,8,,Human,Human
+ppm,SXT_EM,1,8,,Human,Human
+spn,SXT_EM,1,4,,Human,Human
+val,SXT_EM,5,1,,Human,Human
+vel,SXT_EM,5,1,,Human,Human
+vfl,SXT_EM,5,1,,Human,Human
+vhi,SXT_EM,5,1,,Human,Human
+vic,SXT_EM,5,1,,Human,Human
+vin,SXT_EM,5,1,,Human,Human
+vip,SXT_EM,5,1,,Human,Human
+vo1,SXT_EM,5,1,,Human,Human
+vog,SXT_EM,5,1,,Human,Human
+vvu,SXT_EM,5,1,,Human,Human
+vx1,SXT_EM,5,1,,Human,Human
+AC-,SXT_EM,2,8,,Human,Human
+AER,SXT_EM,2,8,,Human,Human
+ENT,SXT_EM,32,2,,Human,Human
+HA-,SXT_EM,5,2,,Human,Human
+STA,SXT_EM,2,8,,Human,Human
+STR,SXT_EM,1,4,,Human,Human
+EBC,SXT_EM,2,8,,Human,Human
+eco,FOS_EM,8,16,Urinary tract infection,Human,Human
+STA,FOS_EM,32,64,,Human,Human
+EBC,FOS_EM,32,64,,Human,Human
+STA,FUS_EM,1,2,,Human,Human
+ENT,QDA_EM,1,8,,Human,Human
+STA,QDA_EM,1,4,,Human,Human
+EBC,CFR_EM,16,32,Urinary tract infection,Human,Human
+EBC,CZO_EM,1,8,Urinary tract infection,Human,Human
+Gen,CZO_EM,1,4,,Human,Human
+spn,CEC_EM,1,1,,Human,Human
+EBC,LEX_EM,16,32,Urinary tract infection,Human,Human
+bca,FEP_EM,4,8,,Human,Human
+spn,FEP_EM,1,4,,Human,Human
+SVI,FEP_EM,5,1,,Human,Human
+AER,FEP_EM,1,8,,Human,Human
+HA-,FEP_EM,25,5,,Human,Human
+PS-,FEP_EM,1,16,,Human,Human
+EBC,FEP_EM,1,8,,Human,Human
+Gen,FEP_EM,4,16,,Human,Human
+ngo,CFM_EM,125,25,,Human,Human
+sap,FOX_EM,8,16,Screen,Human,Human
+sau,FOX_EM,4,8,Screen,Human,Human
+slu,FOX_EM,4,8,Screen,Human,Human
+NME,CTX_EM,125,25,,Human,Human
+139,CTX_EM,25,5,,Human,Human
+bca,CTX_EM,1,4,,Human,Human
+kki,CTX_EM,125,25,,Human,Human
+ngo,CTX_EM,125,25,,Human,Human
+pam,CTX_EM,32,6,,Human,Human
+spn,CTX_EM,5,4,Non-meningitis,Human,Human
+spn,CTX_EM,5,1,Meningitis,Human,Human
+val,CTX_EM,25,5,,Human,Human
+vel,CTX_EM,25,5,,Human,Human
+vfl,CTX_EM,25,5,,Human,Human
+vhi,CTX_EM,25,5,,Human,Human
+vic,CTX_EM,25,5,,Human,Human
+vin,CTX_EM,25,5,,Human,Human
+vip,CTX_EM,25,5,,Human,Human
+vo1,CTX_EM,25,5,,Human,Human
+vog,CTX_EM,25,5,,Human,Human
+vvu,CTX_EM,25,5,,Human,Human
+vx1,CTX_EM,25,5,,Human,Human
+SVI,CTX_EM,5,1,,Human,Human
+HA-,CTX_EM,125,25,Non-meningitis,Human,Human
+HA-,CTX_EM,125,25,Meningitis,Human,Human
+EBC,CTX_EM,1,4,Non-meningitis,Human,Human
+EBC,CTX_EM,1,2,Meningitis,Human,Human
+Gen,CTX_EM,1,4,,Human,Human
+spn,CPD_EM,25,1,,Human,Human
+HA-,CPD_EM,25,5,,Human,Human
+EBC,CPD_EM,1,2,Urinary tract infection,Human,Human
+139,CAZ_EM,1,2,,Human,Human
+ppm,CAZ_EM,1,16,,Human,Human
+val,CAZ_EM,1,2,,Human,Human
+vel,CAZ_EM,1,2,,Human,Human
+vfl,CAZ_EM,1,2,,Human,Human
+vhi,CAZ_EM,1,2,,Human,Human
+vic,CAZ_EM,1,2,,Human,Human
+vin,CAZ_EM,1,2,,Human,Human
+vip,CAZ_EM,1,2,,Human,Human
+vo1,CAZ_EM,1,2,,Human,Human
+vog,CAZ_EM,1,2,,Human,Human
+vvu,CAZ_EM,1,2,,Human,Human
+vx1,CAZ_EM,1,2,,Human,Human
+AER,CAZ_EM,1,8,,Human,Human
+PS-,CAZ_EM,1,16,,Human,Human
+EBC,CAZ_EM,1,8,,Human,Human
+Gen,CAZ_EM,4,16,,Human,Human
+HA-,CTB_EM,1,2,,Human,Human
+EBC,CTB_EM,1,2,Urinary tract infection,Human,Human
+sau,BPR_EM,2,4,,Human,Human
+sc+,BPR_EM,2,4,,Human,Human
+Gen,BPR_EM,4,8,,Human,Human
+NME,CRO_EM,125,25,,Human,Human
+bca,CRO_EM,1,4,,Human,Human
+kki,CRO_EM,64,12,,Human,Human
+ngo,CRO_EM,125,25,,Human,Human
+spn,CRO_EM,5,4,Non-meningitis,Human,Human
+spn,CRO_EM,5,1,Meningitis,Human,Human
+SVI,CRO_EM,5,1,,Human,Human
+HA-,CRO_EM,125,25,Non-meningitis,Human,Human
+HA-,CRO_EM,125,25,Meningitis,Human,Human
+EBC,CRO_EM,1,4,Non-meningitis,Human,Human
+EBC,CRO_EM,1,2,Meningitis,Human,Human
+Gen,CRO_EM,1,4,,Human,Human
+bca,CXM_EM,1,8,Oral,Human,Human
+bca,CXM_EM,4,16,Intravenous,Human,Human
+kki,CXM_EM,5,1,,Human,Human
+spn,CXM_EM,25,1,Oral,Human,Human
+spn,CXM_EM,5,2,Intravenous,Human,Human
+SVI,CXM_EM,5,1,,Human,Human
+HA-,CXM_EM,1,2,Oral,Human,Human
+HA-,CXM_EM,1,4,Intravenous,Human,Human
+EBC,CXM_EM,8,16,Urinary tract infection,Human,Human
+EBC,CXM_EM,1,16,Intravenous,Human,Human
+Gen,CXM_EM,4,16,,Human,Human
+NME,CIP_EM,32,6,Prophylaxis,Human,Human
+139,CIP_EM,25,5,,Human,Human
+ban,CIP_EM,0,0,,Human,Human
+bca,CIP_EM,125,25,,Human,Human
+caj,CIP_EM,1,1,,Human,Human
+cco,CIP_EM,1,1,,Human,Human
+kki,CIP_EM,64,12,,Human,Human
+ngo,CIP_EM,32,12,,Human,Human
+pam,CIP_EM,64,12,,Human,Human
+sau,CIP_EM,1,2,,Human,Human
+sc+,CIP_EM,1,2,,Human,Human
+spn,CIP_EM,0,0,,Human,Human
+val,CIP_EM,25,5,,Human,Human
+vel,CIP_EM,25,5,,Human,Human
+vfl,CIP_EM,25,5,,Human,Human
+vhi,CIP_EM,25,5,,Human,Human
+vic,CIP_EM,25,5,,Human,Human
+vin,CIP_EM,25,5,,Human,Human
+vip,CIP_EM,25,5,,Human,Human
+vo1,CIP_EM,25,5,,Human,Human
+vog,CIP_EM,25,5,,Human,Human
+vvu,CIP_EM,25,5,,Human,Human
+vx1,CIP_EM,25,5,,Human,Human
+SCN,CIP_EM,1,2,,Human,Human
+AC-,CIP_EM,1,2,,Human,Human
+AEC,CIP_EM,2,4,,Human,Human
+AER,CIP_EM,25,1,,Human,Human
+BCS,CIP_EM,1,1,,Human,Human
+COR,CIP_EM,1,2,,Human,Human
+ENT,CIP_EM,4,8,Urinary tract infection,Human,Human
+HA-,CIP_EM,64,12,,Human,Human
+PS-,CIP_EM,1,1,,Human,Human
+SAL,CIP_EM,64,12,,Human,Human
+EBC,CIP_EM,25,1,,Human,Human
+Gen,CIP_EM,25,1,,Human,Human
+ban,ERY_EM,0,0,,Human,Human
+bca,ERY_EM,25,1,,Human,Human
+caj,ERY_EM,4,8,,Human,Human
+cco,ERY_EM,8,16,,Human,Human
+kki,ERY_EM,5,1,,Human,Human
+lmo,ERY_EM,1,2,,Human,Human
+spn,ERY_EM,25,1,,Human,Human
+BCS,ERY_EM,5,1,,Human,Human
+HA-,ERY_EM,16,32,,Human,Human
+STA,ERY_EM,1,4,,Human,Human
+STA,ERY_EM,1,2,Screen,Human,Human
+STR,ERY_EM,25,1,,Human,Human
+bca,ETP_EM,5,1,,Human,Human
+spn,ETP_EM,5,1,,Human,Human
+SVI,ETP_EM,5,1,,Human,Human
+HA-,ETP_EM,5,1,,Human,Human
+EBC,ETP_EM,5,1,,Human,Human
+AN-,ETP_EM,5,1,,Human,Human
+AN+,ETP_EM,5,1,,Human,Human
+Gen,ETP_EM,5,2,,Human,Human
+pae,CZA_EM,8,16,,Human,Human
+EBC,CZA_EM,8,16,,Human,Human
+Gen,CZA_EM,8,16,,Human,Human
+pae,CZA_ED10,17,16,,Human,Human
+EBC,CZA_ED10,13,12,,Human,Human
+pae,FDC_EM,2,4,,Human,Human
+EBC,FDC_EM,2,4,,Human,Human
+pae,CZT_EM,4,8,,Human,Human
+HA-,CZT_EM,5,1,Pneumonia,Human,Human
+EBC,CZT_EM,2,4,,Human,Human
+Gen,CZT_EM,4,8,,Human,Human
+pae,CZT_ED30,23,22,,Human,Human
+HA-,CZT_ED30,23,22,Pneumonia,Human,Human
+EBC,CZT_ED30,22,21,,Human,Human
+ban,VAN_EE,0,0,,Human,Human
+cdf,VAN_EE,2,4,,Human,Human
+cpe,VAN_EE,2,4,,Human,Human
+pro,VAN_EE,2,4,,Human,Human
+sau,VAN_EE,2,4,,Human,Human
+sc+,VAN_EE,2,4,,Human,Human
+spn,VAN_EE,2,4,,Human,Human
+SCN,VAN_EE,4,8,,Human,Human
+SVI,VAN_EE,2,4,,Human,Human
+AEC,VAN_EE,1,2,,Human,Human
+BCS,VAN_EE,2,4,,Human,Human
+COR,VAN_EE,2,4,,Human,Human
+ENT,VAN_EE,4,8,,Human,Human
+STR,VAN_EE,2,4,,Human,Human
+AN+,VAN_EE,2,4,,Human,Human
+sau,TEC_EE,2,4,,Human,Human
+sc+,TEC_EE,2,4,,Human,Human
+spn,TEC_EE,2,4,,Human,Human
+SCN,TEC_EE,4,8,,Human,Human
+SVI,TEC_EE,2,4,,Human,Human
+ENT,TEC_EE,2,4,,Human,Human
+STR,TEC_EE,2,4,,Human,Human
+eco,FOS_EE,8,16,Urinary tract infection,Human,Human
+STA,FOS_EE,32,64,,Human,Human
+EBC,FOS_EE,32,64,,Human,Human
+NME,PEN_EE,25,5,,Human,Human
+cpe,PEN_EE,5,1,,Human,Human
+fne,PEN_EE,64,12,,Human,Human
+kki,PEN_EE,32,6,,Human,Human
+lmo,PEN_EE,1,2,Non-meningitis,Human,Human
+lmo,PEN_EE,0,0,Meningitis,Human,Human
+ngo,PEN_EE,64,2,,Human,Human
+pam,PEN_EE,5,1,,Human,Human
+pro,PEN_EE,64,12,,Human,Human
+sau,PEN_EE,125,25,,Human,Human
+sc+,PEN_EE,125,25,,Human,Human
+slu,PEN_EE,125,25,,Human,Human
+spn,PEN_EE,64,4,Non-meningitis,Human,Human
+spn,PEN_EE,64,12,Meningitis,Human,Human
+SVI,PEN_EE,25,4,,Human,Human
+SVI,PEN_EE,25,5,Screen,Human,Human
+AEC,PEN_EE,125,25,,Human,Human
+COR,PEN_EE,125,25,,Human,Human
+PRT,PEN_EE,5,1,,Human,Human
+STR,PEN_EE,25,5,Non-meningitis,Human,Human
+STR,PEN_EE,125,25,Meningitis,Human,Human
+AN-,PEN_EE,25,1,,Human,Human
+AN+,PEN_EE,25,1,,Human,Human
+Gen,PEN_EE,25,4,,Human,Human
+STA,DAP_EE,1,2,,Human,Human
+STR,DAP_EE,1,2,,Human,Human
+sau,GEN_ED10,18,17,,Human,Human
+sc+,GEN_ED10,18,17,,Human,Human
+SCN,GEN_ED10,22,21,,Human,Human
+AC-,GEN_ED10,17,16,,Human,Human
+AC-,GEN_ED10,17,16,Urinary tract infection,Human,Human
+EBC,GEN_ED10,17,16,,Human,Human
+EBC,GEN_ED10,17,16,Urinary tract infection,Human,Human
+SVI,DAL_EM,125,25,,Human,Human
+STA,DAL_EM,125,25,,Human,Human
+STR,DAL_EM,125,25,,Human,Human
+Gen,DAL_EM,25,5,,Human,Human
+cdi,TGC_EM,5,1,,Human,Human
+eco,TGC_EM,5,1,,Human,Human
+efa,TGC_EM,25,5,,Human,Human
+efm,TGC_EM,25,5,,Human,Human
+ENT,TGC_EM,25,5,,Human,Human
+STA,TGC_EM,5,1,,Human,Human
+STR,TGC_EM,125,25,,Human,Human
+Gen,TGC_EM,5,1,,Human,Human
+STA,DAP_EM,1,2,,Human,Human
+STR,DAP_EM,1,2,,Human,Human
+139,DOX_EM,5,1,,Human,Human
+bca,DOX_EM,1,4,,Human,Human
+kki,DOX_EM,5,1,,Human,Human
+pam,DOX_EM,1,2,,Human,Human
+ppm,DOX_EM,1,4,,Human,Human
+spn,DOX_EM,1,4,,Human,Human
+val,DOX_EM,5,1,,Human,Human
+vel,DOX_EM,5,1,,Human,Human
+vfl,DOX_EM,5,1,,Human,Human
+vhi,DOX_EM,5,1,,Human,Human
+vic,DOX_EM,5,1,,Human,Human
+vin,DOX_EM,5,1,,Human,Human
+vip,DOX_EM,5,1,,Human,Human
+vo1,DOX_EM,5,1,,Human,Human
+vog,DOX_EM,5,1,,Human,Human
+vvu,DOX_EM,5,1,,Human,Human
+vx1,DOX_EM,5,1,,Human,Human
+HA-,DOX_EM,1,4,,Human,Human
+STA,DOX_EM,1,4,,Human,Human
+STR,DOX_EM,1,4,,Human,Human
+san,TZD_EM,5,1,,Human,Human
+sct,TZD_EM,5,1,,Human,Human
+sin,TZD_EM,5,1,,Human,Human
+STA,TZD_EM,5,1,,Human,Human
+STR,TZD_EM,5,1,,Human,Human
+
+[Antibiotic Panels]
+Staphylococcus sp.       =  X,X,,,X,X,X,X,,X,X,X,X,X,,X,X,X,X,X,X,,,,X,X,X,X,X,X,X,X,X,X,X,X,X,,,,X,X,X,X,X,X,,,X,X,,,X,X,X,X,,,X,X,[X],,[X],,,X,X,,X,X,X,X,X,X,X,X,X,,X,X,,,X,X,X,X,X,X,X,X,X,X,X,X,,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,,,[X],[X],X,X,X,X,,,,,X,X,X,X,X,X,X,X,X,X,,,,,,,,
+Streptococcus sp.        =  X,X,,,,,X,X,,X,X,X,X,X,,X,X,X,X,,,,,,X,X,X,X,X,X,X,X,X,X,X,X,X,,,,X,X,X,X,X,X,,,X,X,,,X,X,,X,,,X,X,[X],,,,,X,,,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,,,,,,X,X,X,,,,,,,,,,X,X,X,X,X,X,X,X,,X,,,,,X,X,X,X,,,X,X,,,X,X,X,X,X,X,X,X,,,,,,,,
+Streptococcus pneumoniae =  X,X,,,,,X,X,,X,X,X,X,X,,X,X,X,,,,,,,,,,X,X,X,X,X,X,X,X,X,X,,,,X,X,X,X,X,X,,,X,X,,,X,X,,,,,,,X,,X,,,,,,,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,,,,,,,,,X,X,,,,,,,,,,,,,,X,X,,,,,,,,,X,X,X,X,,,,,X,X,X,X,X,X,X,X,X,X,,,,,,,,
+Streptococcus viridans   =  ,,,,,,X,X,,X,X,X,X,X,,X,X,X,X,,,,X,,X,,,X,X,,,X,X,,,X,X,,,,,,,,X,X,,,,,,,,,,,,,,,,,,,,X,,,X,X,X,X,X,X,X,,,X,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,X,X,,,,,X,X,,,,,,,,,X,X,,X,,,X,X,,,,,,,X,X
+Enterococcus sp.         =  ,,,,,,X,X,,X,X,X,X,X,,X,X,X,X,,,X,X,,,,,,,,,X,X,,,,,,,,X,X,X,X,,,,,,,,,,,,,,,X,X,X,,,,,,,,,,,X,X,,X,,,X,X,X,,,,,X,X,,,,,,,,,,,,,,X,X,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gram positive urine      =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,X,X,,,,,,,,,,,,,,,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,X,X,,,,,,,,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gram negative            =  ,,X,X,X,X,X,X,X,,X,X,X,,X,X,,,,X,X,,,,,,,X,X,,,X,X,,,,,X,,,X,X,,,X,X,,,,,,,X,X,,,,,X,X,X,X,,,,,X,X,,,,X,X,X,X,,,,,,,,,,X,X,X,X,X,X,X,X,X,X,X,X,X,,,,,X,X,,,,,,,,,X,X,,,,,X,X,,,X,X,,,X,X,X,X,X,X,,,X,X,X,X,X,X,X,X,,
+Gram negative urine      =  ,,,,X,X,X,X,X,,X,X,X,,X,X,,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,X,X,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,X,X,X,X,,,X,X,X,,,,,,,X,X,X,X,,,X,X,,,X,X,,,,,X,X,,,X,X,,,,,X,X,,,,,,,,,,,,
+Salmonella sp.           =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Shigella sp.             =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pseudomonas sp.          =  ,,X,X,X,X,,,,,,,,,,,,,,,,,,,,,,X,X,,,X,X,,,,,X,,,X,X,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,X,,X,X,,,,,,,,,,,,X,X,X,X,,,,,,,,,,,,X,X,,,,,,,,,X,X,,,,,,,,,X,X,,,,,,,,,,,,,X,X,X,X,X,X,,
+Non-fermenters           =  ,,,,X,X,,,,,,,,,,,,,,X,X,,,,,,,X,X,,,X,X,,,,,X,,,X,X,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,X,X,,,X,X,,,,,,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Haemophilus sp.          =  X,X,,,,,X,X,,X,X,X,X,X,,X,,,,,,,,,,,,X,,X,,X,,X,,,,,,,X,,,,X,,,,X,,,,X,,,,X,,,,,,,,,,X,,X,,,,,X,,X,,,,,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Campylobacter sp.        =  X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Neisseria gonorrhoeae    =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Neisseria meningitidis   =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Anaerobes                =  ,,,,,,,,,,,,,,,,X,X,,,,,,,,,,,,,,,,,,X,X,,,,,,,,X,X,X,X,,,,,,,,,,,,,,,,,,,,,X,X,,,,X,X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mycobacteria             =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Fungi                    =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Parasites                =  ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+[Antibiotic Profiles]
+
+[Hardware]
+Caliper = No
+Caliper Port = NONE
+
+[Data fields]
+Laboratory,LABORATORY,10,TEXT,HIDDEN,Human-Animal-Food,Exclude
+Origin,ORIGIN,1,TEXT,HIDDEN,Human-Animal-Food,Exclude
+Identification number,PATIENT_ID,12,TEXT,ORIGIN,Human-Animal-Food,Include
+Last name,LAST_NAME,30,TEXT,ORIGIN,Human,Exclude
+Sex,SEX,1,TEXT,ORIGIN,Human-Animal,Exclude
+Date of birth,DATE_BIRTH,8,DATE,ORIGIN,Human,Exclude
+Age,AGE,3,TEXT,ORIGIN,Human-Animal,Exclude
+Location,WARD,20,TEXT,LOCATION,Human-Animal-Food,Include
+Institution,INSTITUT,10,TEXT,LOCATION,Human,Exclude
+Department,DEPARTMENT,15,TEXT,LOCATION,Human,Exclude
+Location type,WARD_TYPE,3,TEXT,LOCATION,Human-Animal-Food,Exclude
+Date of admission,DATE_ADMIS,8,DATE,LOCATION,Human,Exclude
+Specimen number,SPEC_NUM,12,TEXT,SPECIMEN,Human-Animal-Food,Include
+Specimen date,SPEC_DATE,8,DATE,SPECIMEN,Human-Animal-Food,Include
+Specimen type,SPEC_TYPE,15,TEXT,SPECIMEN,Human-Animal-Food,Include
+Specimen type (Numeric),SPEC_CODE,3,TEXT,HIDDEN,Human-Animal-Food,Exclude
+Reason,SPEC_REAS,3,TEXT,SPECIMEN,Human-Animal-Food,Exclude
+Isolate number,ISOL_NUM,10,TEXT,HIDDEN,Human-Animal-Food,Include
+Organism,ORGANISM,3,TEXT,MICROBIOLOGY,Human-Animal-Food,Include
+Organism type,ORG_TYPE,1,TEXT,HIDDEN,Human-Animal-Food,Include
+ESBL,ESBL,1,TEXT,MICROBIOLOGY,Human-Animal-Food,Exclude
+Carbapenemase,CARBAPENEM,1,TEXT,MICROBIOLOGY,Human-Animal-Food,Exclude
+MRSA,MRSA,1,TEXT,MICROBIOLOGY,Human-Animal-Food,Exclude
+Comment,COMMENT,30,TEXT,OTHER,Human-Animal-Food,Exclude
+Date of data entry,DATE_DATA,8,DATE,HIDDEN,Human-Animal-Food,Exclude
+VRE,VRE,1,TEXT,MICROBIOLOGY,Human-Animal-Food,Exclude
+Inducible clindamycin resistance,INDUC_CLI,1,TEXT,MICROBIOLOGY,Human-Animal-Food,Exclude
+AmpC production,AMPC,1,TEXT,MICROBIOLOGY,Human-Animal-Food,Exclude
+Менше 72 годин після поранення,X_ДО_72,10,TEXT,OTHER,Human-Animal-Food,Exclude
+Менше 48 годин у стаціонарі,X_ДО_48,10,TEXT,OTHER,Human-Animal-Food,Exclude
+Антибіотик 1 до госпіталізації,X_АБ1,10,TEXT,OTHER,Human-Animal-Food,Exclude
+Антибіотик 2 до госпіталізації,X_АБ2,10,TEXT,OTHER,Human-Animal-Food,Exclude
+Антибіотик 1 у поточному ЗОЗ,X_АБ3,10,TEXT,OTHER,Human-Animal-Food,Exclude
+Антибіотик 2 у поточному ЗОЗ,X_АБ4,10,TEXT,OTHER,Human-Animal-Food,Exclude
+
+[Clinical report format]
+Number of reports per page = 1
+Begin report = Line 2
+Heading Text (Center, Consolas, 12, Bold) = Бактеріологічна лабораторія
+Heading Text (Center, Consolas, 10) = {Blank line}
+Heading Text (Center, Consolas, 10) = {Blank line}
+Heading Text (Center, Consolas, 10) = {Blank line}
+Include Footer = Yes
+Data Fields Font = Left, Consolas, 9
+Data Fields Top Left = PATIENT_ID
+Data Fields Top Left = LAST_NAME
+Data Fields Top Left = DATE_BIRTH
+Data Fields Top Right = WARD
+Data Fields Top Right = SPEC_NUM
+Data Fields Top Right = SPEC_DATE
+Data Fields Top Right = SPEC_TYPE
+Data Fields Results = DATE_ADMIS
+Data Fields Results = ISOL_NUM
+Data Fields Results = ORGANISM
+Data Fields Results = ESBL
+Data Fields Results = CARBAPENEM
+Data Fields Results = MRSA
+Data Fields Results = COMMENT
+Measurements And Interpretations = Yes
+Conditional antibiotic reporting = Yes
+Print clinical message = Yes
+
+[Expert rules:  Selective antibiotic reporting]
+
+[Expert rules:  Modify antibiotic interpretations]
+Interpretation rule = MRS
+Interpretation rule = ESBL-Confirmed (Inactive)
+Interpretation rule = ESBL-AmpC-Probable (Inactive)
+Interpretation rule = BLNAR-Hflu
+Interpretation rule = Inducible-Clinda
+
+[Expert rules:  Alerts]
+Expert rule sets = WHONET
+
+[Encryption settings]
+Encrypted fields = PATIENT_ID,SPEC_NUM
+Deleted fields = FIRST_NAME,MID_NAME,LAST_NAME,FULL_NAME
+Encrypted secret word ciphertext = XVpjjO7N2EdyzVmbyE3YBQ==|TEySXis1RKdcZwD/dLA7XDYGi0yBj45CwOIpl4bQIi8Fd6Qw8OY8LFF6oLp7i1HJ
+Encrypted field length = 12
+Include underscores = True
+Hexadecimal protected value = False
+Age protection = AgeInYears
+Date of birth protection = Delete
+Other date protection = NoChange
+Add or subtract days = False
+Add days = True
+Shift days = 998
+
+[Code list settings]
+File origin = UNICODE
+Code page = 65001
