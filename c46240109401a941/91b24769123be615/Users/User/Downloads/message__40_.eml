@@ -1,0 +1,8 @@
+Reporting-MTA: dns; out14.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;260600@dasu.gov.ua
+Status: 5.0.0
+Remote-MTA: dns; mail.dasu.gov.ua
+Diagnostic-Code: smtp; 552 5.2.3 Message size (25280797) is over limit (10485760)
+

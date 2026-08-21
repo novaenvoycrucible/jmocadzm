@@ -1,0 +1,10 @@
+Reporting-MTA: dns;AS4PR05MB9546.eurprd05.prod.outlook.com
+Received-From-MTA: dns;PR3PR05MB7434.eurprd05.prod.outlook.com
+Arrival-Date: Fri, 2 Dec 2022 04:05:31 +0000
+
+Final-Recipient: rfc822;SMD.zvit@ehealth.nszu.gov.ua
+Action: failed
+Status: 5.4.300
+Diagnostic-Code: smtp;550 5.4.300 Message expired -> 450 4.1.7 <zolcrl@i.ua>: Sender address rejected: unverified address: host out12.mi6.kiev.ua[185.187.81.138] said: 550 Sender verify failed (in reply to RCPT TO command)
+
+
