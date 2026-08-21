@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Europe/Kiev
+X-LIC-LOCATION:Europe/Kiev
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:GMT+3
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:GMT+2
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Kiev:20250311T100000
+DTEND;TZID=Europe/Kiev:20250311T110000
+DTSTAMP:20250306T081620Z
+ORGANIZER:mailto:dephealth.lvivoda@gmail.com
+UID:39k692btrrodcu50vo50o1suvo@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;X-NUM-GUESTS=0:mailto:dephealth.lvivoda@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=irunarob48@gmail.com;X-NUM-GUESTS=0:mailto:irunarob48@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=dozlne50@gmail.com;X-NUM-GUESTS=0:mailto:dozlne50@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=veresm26@gmail.com;X-NUM-GUESTS=0:mailto:veresm26@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/hfj-vczw-sfm
+X-MICROSOFT-CDO-OWNERAPPTID:938937518
+CREATED:20250305T153111Z
+DESCRIPTION:  7/8-4969/0/1-25 від 04.03.2025<br><br>Національним агентством
+  України з питань державної служби спільно зВищою школою публічного управлі
+ ння та Національним агентством з питаньзапобігання корупції планується пров
+ едення семінару «Заповнення електроннихдекларацій: новації та інструменти д
+ ля спрощення».Захід відбудеться 11 березня 2025 року о 10:00.Трансляція зах
+ оду буде доступна на YouTube - каналі Вищої школипублічного управління за п
+ осиланням:<a href="https://youtube.com/live/AgQ5e0gKPd8?feature=share" targ
+ et="_blank">https://youtube.com/live/AgQ5e0gKPd8?feature=share</a>З огляду 
+ на вищезазначене\, запрошуємо представників обласної військовоїадміністраці
+ ї долучитись до заходу.Контактна особа: Медведь Аліна Вікторівна – завідува
+ ч Центрупрофесійного навчання інноваційним інструментам та технологіям Вищо
+ ї школипублічного управління\, e-mail: <a href="mailto:a.medved@hs.gov.ua" 
+ target="_blank">a.medved@hs.gov.ua</a> \, тел.: 044 357 50 07.Додаток: прог
+ рама семінару «Заповнення електронних декларацій: новації таінструменти для
+  спрощення» на 2 арк. в 1 прим.Голова Наталія АЛЮШИНА<br><br>Вхідний №7/8-5
+ 075/0/1-25 від 05.03.2025<br><br> Національне агентство з питань запобіганн
+ я корупції спільно з Національнимагентством України з питань державної служ
+ би та Вищою школою публічногоуправління організовує семінар на тему «Заповн
+ ення електронних декларацій:новації та інструменти для спрощення».Під час в
+ ебінару буде детально розглянуто такі питання:як підготуватися до подання д
+ екларації\;як правильно заповнити окремі розділи декларації\;додаткові інст
+ рументи фінансового контролю\;що відбувається з декларацією після подання –
+  як Національне агентство зпитань запобігання корупції перевіряє зміст декл
+ арацій\;найпоширеніші помилки при заповненні декларації\;відповідальність з
+ а порушення вимог фінансового контролю.Детальна програма заходу за посиланн
+ ям: <a href="https://bit.ly/4bn0REh." target="_blank"><u>https://bit.ly/4bn
+ 0REh.</u></a>Початок вебінару: о 10:00 11 березня 2025 року.Тривалість захо
+ ду – 3 години.Формат: онлайн.До участі у вебінарі запрошуються керівники\, 
+ уповноважені особи з питаньзапобігання та виявлення корупції\, представники
+  служб управління персоналом таінші працівники державних органів та органів
+  місцевого самоврядування\, якізацікавлені у темі вебінару.Також будемо вдя
+ чні за поширення інформації щодо участі у вебінарі середтериторіальних (між
+ регіональних) органів та юридичних осіб\, що належать досфери управління ва
+ шого органу.Особи\, які бажають взяти участь у вебінарі\, мають до 14:00 10
+  березня2025 року заповнити форму реєстрації за посиланням:<a href="https:/
+ /forms.gle/ZvVchAbojSQce6YT9." target="_blank"><u>https://forms.gle/ZvVchAb
+ ojSQce6YT9.</u></a>Контактна особа – Тетяна Забучинська\, головний спеціалі
+ ст відділувиробництва і впровадження навчальних програм Управління просвітн
+ ицькоїроботи та навчальних програм Національного агентства (тел. 044 200 06
+  48).\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~::~:~::-\nПриєднатися через Google Meet: https://meet.google.c
+ om/hfj-vczw-sfm\n\nДокладну інформацію про Meet можна переглянути на цій ст
+ орінці: https://support.google.com/a/users/answer/9282720\n\nНе змінюйте це
+ й розділ.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20250306T081619Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:семінар «Заповнення електронних декларацій: новації та інструменти 
+ для спрощення»
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
