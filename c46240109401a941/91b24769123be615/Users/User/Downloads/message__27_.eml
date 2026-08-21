@@ -1,0 +1,8 @@
+Reporting-MTA: dns; out15.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;dsr_ods@od.npu.gov.ua
+Status: 5.0.0
+Remote-MTA: dns; mail.od.npu.gov.ua
+Diagnostic-Code: smtp; 552 5.3.4 Message size exceeds fixed limit
+

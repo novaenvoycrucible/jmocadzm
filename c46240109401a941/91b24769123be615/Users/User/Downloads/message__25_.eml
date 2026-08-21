@@ -1,0 +1,6 @@
+Reporting-MTA: dns; st12.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;mtd@zimr.gov.ua
+Status: 5.0.0
+
