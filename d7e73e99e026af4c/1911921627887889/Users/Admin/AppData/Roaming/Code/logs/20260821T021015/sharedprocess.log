@@ -1,0 +1,32 @@
+2026-08-21 02:10:24.797 [info] Getting Manifest... ms-python.debugpy
+2026-08-21 02:10:24.799 [info] Getting Manifest... ms-python.python
+2026-08-21 02:10:24.913 [info] Installing extension: ms-python.debugpy {"productVersion":{"version":"1.105.1","date":"2025-10-14T22:33:36.618Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json","path":"/c:/Users/Admin/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2026-08-21 02:10:24.929 [info] Installing extension: ms-python.python {"productVersion":{"version":"1.105.1","date":"2025-10-14T22:33:36.618Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json","path":"/c:/Users/Admin/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2026-08-21 02:10:25.405 [info] Getting Manifest... ms-python.python
+2026-08-21 02:10:26.307 [info] Extension signature verification result for ms-python.debugpy: Success. Internal Code: 0. Executed: true. Duration: 473ms.
+2026-08-21 02:10:26.324 [info] Extension signature verification result for ms-python.python: Success. Internal Code: 0. Executed: true. Duration: 580ms.
+2026-08-21 02:10:27.870 [info] Extracted extension to file:///c%3A/Users/Admin/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64: ms-python.debugpy
+2026-08-21 02:10:27.904 [info] Renamed to c:\Users\Admin\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64
+2026-08-21 02:10:27.929 [info] Marked extension as removed ms-python.debugpy-2025.18.0-win32-x64
+2026-08-21 02:10:27.943 [info] Extension installed successfully: ms-python.debugpy vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json
+2026-08-21 02:10:31.318 [info] Extracted extension to file:///c%3A/Users/Admin/.vscode/extensions/ms-python.python-2026.4.0-win32-x64: ms-python.python
+2026-08-21 02:10:31.511 [info] Renamed to c:\Users\Admin\.vscode\extensions\ms-python.python-2026.4.0-win32-x64
+2026-08-21 02:10:31.545 [info] Marked extension as removed ms-python.python-2026.0.0-win32-x64
+2026-08-21 02:10:31.549 [info] Extension installed successfully: ms-python.python vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json
+2026-08-21 02:10:52.705 [info] Getting Manifest... ms-python.vscode-pylance
+2026-08-21 02:10:52.706 [info] Getting Manifest... ms-python.vscode-python-envs
+2026-08-21 02:10:52.716 [info] Installing extension: ms-python.vscode-pylance {"productVersion":{"version":"1.134.0","date":"2026-08-18T18:35:54.886Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json","path":"/c:/Users/Admin/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2026-08-21 02:10:52.718 [info] Installing extension: ms-python.vscode-python-envs {"productVersion":{"version":"1.134.0","date":"2026-08-18T18:35:54.886Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json","path":"/c:/Users/Admin/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2026-08-21 02:10:53.354 [info] Extension signature verification result for ms-python.vscode-python-envs: Success. Internal Code: 0. Executed: true. Duration: 141ms.
+2026-08-21 02:10:53.759 [info] Extracted extension to file:///c%3A/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64: ms-python.vscode-python-envs
+2026-08-21 02:10:53.774 [info] Renamed to c:\Users\Admin\.vscode\extensions\ms-python.vscode-python-envs-1.36.0-win32-x64
+2026-08-21 02:10:53.779 [error] [/c:/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64]: Extension is not compatible with Code 1.105.1. Extension requires: ^1.110.0-20260204.
+2026-08-21 02:10:53.800 [error] [/c:/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64]: Extension is not compatible with Code 1.105.1. Extension requires: ^1.110.0-20260204.
+2026-08-21 02:10:53.806 [error] Error while installing the extension ms-python.vscode-python-envs Cannot read the extension from /c:/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64 vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json
+2026-08-21 02:10:53.895 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Internal Code: 0. Executed: true. Duration: 358ms.
+2026-08-21 02:11:09.883 [info] Extracted extension to file:///c%3A/Users/Admin/.vscode/extensions/ms-python.vscode-pylance-2026.3.1: ms-python.vscode-pylance
+2026-08-21 02:11:10.450 [info] Renamed to c:\Users\Admin\.vscode\extensions\ms-python.vscode-pylance-2026.3.1
+2026-08-21 02:11:10.458 [error] [/c:/Users/Admin/.vscode/extensions/ms-python.vscode-pylance-2026.3.1]: Extension is not compatible with Code 1.105.1. Extension requires: ^1.107.0.
+2026-08-21 02:11:10.484 [error] [/c:/Users/Admin/.vscode/extensions/ms-python.vscode-python-envs-1.36.0-win32-x64]: Extension is not compatible with Code 1.105.1. Extension requires: ^1.110.0-20260204.
+2026-08-21 02:11:10.489 [error] [/c:/Users/Admin/.vscode/extensions/ms-python.vscode-pylance-2026.3.1]: Extension is not compatible with Code 1.105.1. Extension requires: ^1.107.0.
+2026-08-21 02:11:10.491 [error] Error while installing the extension ms-python.vscode-pylance Cannot read the extension from /c:/Users/Admin/.vscode/extensions/ms-python.vscode-pylance-2026.3.1 vscode-userdata:/c%3A/Users/Admin/.vscode/extensions/extensions.json
