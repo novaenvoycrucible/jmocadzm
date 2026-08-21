@@ -1,0 +1,11 @@
+Reporting-MTA: dns; out14.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;azpsmvoronyaky@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. Learn more at
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser p21-20020a05600c05d500b003fe2cdb129csi2857940wmd.209 - gsmtp
+
