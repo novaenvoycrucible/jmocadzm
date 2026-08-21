@@ -1,0 +1,317 @@
+Return-path: <dephealth.lvivoda@gmail.com>
+Received: from [10.10.19.71] (helo=frv71.fwdcdn.com) by frv54.fwdcdn.com; Mon, 16 Dec 2024 15:58:06 +0200
+Authentication-Result: IP=209.85.208.174; mail.from=dephealth.lvivoda@gmail.com; dkim=pass header.i= header.d=gmail.com; ID=1tNBbp-000Dud-2z
+Received-SPF: pass (frv71.fwdcdn.com: domain of gmail.com designates 209.85.208.174 as permitted sender) client-ip=209.85.208.174; envelope-from=dephealth.lvivoda@gmail.com; helo=mail-lj1-f174.google.com;
+Received: from mail-lj1-f174.google.com ([209.85.208.174])
+	by frv71.fwdcdn.com with esmtps ID 1tNBbp-000Dud-2z
+	;
+	Mon, 16 Dec 2024 15:58:05 +0200
+Received: by mail-lj1-f174.google.com with SMTP id 38308e7fff4ca-30229d5b229so40413121fa.0;
+        Mon, 16 Dec 2024 05:58:05 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1734357485; x=1734962285; darn=ukr.net;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=C/X7Q4X/5KZwqd/+3zzBFhTOuRIl8woZg7GZ2OO08jU=;
+        b=lwlr+b0ZsLE/msqFRnSnmCHCyzvsjWL+ObzIkc0D+SOceYCypdUJXoQs7JZ19SXWm0
+         UUvlEgDPfju1wuBedvVOUOdjsAWjtahVLT6YbWZiGMTLRh/ANeHsHV5LWWEPPe/JoUsg
+         bYJ7uOu+PqMtHPeGQg+SxCBGzcNbdI3g5YBpIkzfU4quHG1COQ5Bm2xtj+NOTnzxOm3D
+         0uAGy+oonQtNKfgHAEXQYvdKH86UxTTjnHEWRRU0ojvfl3kpuujW/0kY2TWSTUhWrkxL
+         UbwBwqhNZC0A5ZXDny/AntH8kMUJd1FlGC9ZCo7K1q6M4DMhjRPNrpcyLotUzG7UzvBS
+         ToFQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1734357485; x=1734962285;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=C/X7Q4X/5KZwqd/+3zzBFhTOuRIl8woZg7GZ2OO08jU=;
+        b=CPLLmo+vfntVTPrnh8qCJSC4Xv4VmMH6498D0TRVusa1sRmYgxavt437zuT2qoGLek
+         HLae99NJhBbOI1AxAvTxb6cYDdy+xsQ09EOOx7K2dRQQ0vLL0auy4YdPr9Pj8tKOiniC
+         OTMZ1IiL0qdIRxu3aiBLAhL9bhgCDYLa0ioiVYF3rW0BBNzTGHOmM6SjBOqpmCU59dPA
+         OO+FnpW1omjgKrc47FHDGquD745HM0xGzZ8L2den6OIivDj9qkUJBwNx5QMZeFsnNw8O
+         RCwJ7AZER2kRx8EtH0kC/WeSFkpL8eOeuPf0dfK99s27OLmrpzFAKjgmv7a1+jov3G6O
+         k76Q==
+X-Forwarded-Encrypted: i=1; AJvYcCULj2kV3EQwR2UmgERb06mW7Oj4M+BD3hY1FZcP4+YWGtWoIJhhtZ+EvGi/wvvkWmDMGQvSurhyq2pd+esobQ==@ukr.net, AJvYcCUZNfDc7aeZ5+Rl+Xj2QSC/I/yF16bvFqul3XZUR7Mt0ZBWk+Y0AdAlgGwB4rGcTzoU5MwjQZoPVXoXqQ==@ukr.net, AJvYcCUblET3bzuaJp4W3cM6lHBLwDkiAKtjg+CVmPfI5bxbnzssOZOVvTYNGjT8ZdGJs36XVfChcOUOXLLkhiTp@ukr.net, AJvYcCUm/3fmtSxm5eEjiKz8uh/PXjcg0435lL0K6VpYlv0kk7horZXDlf5J6diDaOqtRmuM34leoLJEXg==@ukr.net, AJvYcCV2bYi6w81zk+mM6EnEomEYpK7NnvKgM4F48snZ6KDGJPR07WYnQJNQEYqizfU45sGOSsYfcLtQNXAl2MOPITB1ALyt@ukr.net, AJvYcCV7jhEVS1Dlr7onaa0KCZy4+aVAUZAwENvA/ok3o6VGIwOHWEv4bbpPWTeAdY+Zt8Q86BtUdgdVcfO8KBox@ukr.net, AJvYcCVDOLGcaTDot3GZ6MapvnvJsp22uPfDcvNWNti1Wm/l1chHGGZ6Yy+LiMp08SlIlHXb/AXmXxWAk2Rv@ukr.net, AJvYcCVHd8jAegvRt9AhwMe3Ot6vG2s6/MhFiEBY9qzeuZ4hiBmtIGY6fWbCDrrAoUssVskMBqSiMA/Lls8=@ukr.net, AJvYcCVOkwOgP5RVZnoH42NY2ATS0q+lHpzQb+4BKnV49E+niB6JU5HHegWaVf+okv3bDDZDYpznR3ngw3+gTGHT@ukr.net, AJvYcCVbrtrk2QL/LuIDnwdhqTOyMHDuol+ctecdmkJOyVDbeTBwg1Kgh5PhjM1+fV5R/gjNTQC+H1QOTzKwVh9x@ukr.net, AJvYcCVrMtwQYX/z3gkZRZMSqRUDKZzPFU5g9bVlnDVYeVl1910/+Gv/ogqSPZZ/JWFJpTIgjBUZGa9i5iauuuFi@ukr.net, AJvYcCVzhgy6lG5HyH4ic0blgzeIWCnvRhdyr50gTKUB5JexifnZLVIQEz0IrUXeWieev5AUyri7YHcU6kk=@ukr.net, AJvYcCW6ghjPogSbgmGS/j5QJa6HSYWlTGLvTdgzmaD0oULf6CssHPvRaS0poNAzNbxcSHRXC2Tdhv4IXA==@ukr.net, AJvYcCWI0QYV8cuHmG9QpGARPbR7ml54rEfbIIU7Nx63cbIjSHBFAYLLtpuhtnj6HOVz7+whyFlzVjXB@ukr.net, AJvYcCWUurlhytGLmh9QICo57UY6XsZTHCDCd3xoebUgeKTN/XHkot9pfwsXbVy6gldIRiOlmRemT1gD6m0fFA==@ukr.net, AJvYcCWYvh4jnt51j6Diw/NFLwsnkNbrYLM4hhZflSDKLfG/+pzERZdxSCgNTjCob5PDZrKQcIaZ/R3JA52o@ukr.net, AJvYcCWqYYaugPANagl0JEWIpbahthsPY9i4h7FIHhnKWoZVGbCCNMK1mPu1gaAk3e0VOIk8ArMGEQ==@ukr.net, AJvYcCWwrP1n9rybw7fOAbsv1/sJQyOf1ZQvqbVAnIJN5yuxNCLujISE27V0PBFazQvQrn2jkV1du9f6kpYI@ukr.net, AJvYcCX0ZRRcRwYi3VVbHE3nk7XscOzcvJ1fyhcVYN12XHGU/YHHamnV+FySnOHDh5FqF4yrO1JOlby/xGjTcjw5TzDD3Q==@ukr.net, AJvYcCX4bUF+/6rruqr+9+woYNwvbLGipuNicGaJRSJ1U6WMfCGs7uZ6LaD9p0+t0kkoxfAZH13clBjdsd+Q@ukr.net, AJvYcCX9MFsIU+eUqI2NqXyiJ34wzGR4qiqEoy7ndy1UTdeCTK3oRPc8l2eMw7EbYQP0Eo2WvEXhrvXy@ukr.net, AJvYcCXIYkUWL8XuUpzquUobRAIJAR8SGq6CPvvQtE/CRfVjCqSVnp233G5KTAh08WJitLpjkxewZAK5yA==@ukr.net, AJvYcCXKC7muRbwwLCYnEhaYOwQ2gmcwU/eCydLbAPjNW0tuiAwvGAt7CEGxTXPSbAJ/TKxpTUU0ilGpq95A7DChJGa99bKGHjHk@ukr.net, AJvYcCXTaWDBIgpgj9Nmxpntawb8YpnJDr/ZNdRsg2m3fbrcKpcvwdD8lQpvh4/fPJL1grQsM8yPAQph4eQ=@ukr.net, AJvYcCXkEf+hGpYTAy/OL+YBGGUFlmhx7r860AAZrkBxPaMruVS/CrW+mcxjRpp5DaKYnu1ISnJc/L48aa0MMZWDLCY=@ukr.net
+X-Gm-Message-State: AOJu0Yx+IzK/jNhmh5DG1wY+yAgCWCoQV9IStcHJ+CvZStMaeGS2xIM6
+	9yopgs8U4amjv9tJW30zy/iDnNCI3uCg4h9yU/eA9vnfRnrdZpxZUYVEkSWhWCLV+ARYjKYJUOF
+	fTapDvx9dKE7DlpwcUeKL64W58b5Dtg==
+X-Gm-Gg: ASbGncsJ7LJQHVIhFX/CUuEcHP/vXjmUfe339DBVCI611ja+epGulZVpkBhh+U3VYsZ
+	DJ1R/9yC466yLOjSU76altB0UipPHGa9E1HIaRvA=
+X-Google-Smtp-Source: AGHT+IEvqH/EEZMs+fkDqHcSft4p3bTqThOmIiiyx0jB/EEblN81NEE7xTzBxm/cavNb0bN2GPVHn88dFDCHuUl0dlU=
+X-Received: by 2002:a05:6512:ace:b0:540:353a:dfa3 with SMTP id
+ 2adb3069b0e04-54090268d6fmr3582137e87.11.1734357484632; Mon, 16 Dec 2024
+ 05:58:04 -0800 (PST)
+MIME-Version: 1.0
+References: <1730729331.0919253000.sc90yiee@frv52.fwdcdn.com> <CANB+Jgarq1e4Qny3vbR2mAs7kT0nRe+moUDU6ZCK9avMO+mnSg@mail.gmail.com>
+In-Reply-To: <CANB+Jgarq1e4Qny3vbR2mAs7kT0nRe+moUDU6ZCK9avMO+mnSg@mail.gmail.com>
+From: =?UTF-8?B?0JTQtdC/0LDRgNGC0LDQvNC10L3RgiDQntCX?= <dephealth.lvivoda@gmail.com>
+Date: Mon, 16 Dec 2024 15:57:53 +0200
+Message-ID: <CANB+JgY3tyhCvMs-4wFTLfejo-5_YvrTwoNXvb9oRjQTdDH4zQ@mail.gmail.com>
+Subject: =?UTF-8?B?0KPQktCQ0JPQkCEg0JLQkNCW0JvQmNCS0J4hISEgMTcuMTIuMjAyNCDQviAwOTozMCDQsw==?=
+	=?UTF-8?B?0L7QtC4g0L3QsCDQv9C70LDRgtGE0L7RgNC80ZYgWm9vbSDQstGW0LTQsdGD0LTQtdGC0YzRgdGPINC+?=
+	=?UTF-8?B?0L3Qu9Cw0LnQvSDigJMg0L3QsNGA0LDQtNCwINC00LjRgNC10LrRgtC+0YDQsCDQtNC10L/QsNGA0YI=?=
+	=?UTF-8?B?0LDQvNC10L3RgtGDINC+0YXQvtGA0L7QvdC4INC30LTQvtGA0L7QsuKAmdGPINCb0YzQstGW0LLRgdGM?=
+	=?UTF-8?B?0LrQvtGXINCe0JTQkCDQtyDQutC10YDRltCy0L3QuNC60LDQvNC4INC30LDQutC70LDQtNGW0LIg0L4=?=
+	=?UTF-8?B?0YXQvtGA0L7QvdC4INC30LTQvtGA0L7QsuKAmdGPINCb0YzQstGW0LLRgdGM0LrQvtGXINC+0LHQu9Cw?=
+	=?UTF-8?B?0YHRgtGWLg==?=
+To: =?UTF-8?B?0JvQntCa0Js=?= <lokl@ukr.net>, 
+	=?UTF-8?B?0J7QsdC70LDRgdC90LAg0L/RgdC40YXQu9GW0LrQsNGA0L3Rjw==?= <lokplkz@gmail.com>, 
+	=?UTF-8?B?0JvQntCT0IbQktGW0KA=?= <logivr@gmail.com>, 
+	lodcl oxmatdyt <lodcl.oxmatdyt@gmail.com>, =?UTF-8?B?0JvRjtCx0L7QvNC40YAg0KDQsNC6?= <lrfpkldc@gmail.com>, 
+	=?UTF-8?B?0L7QvdC60L7RhtC10L3RgtGA?= <cancerlviv@gmail.com>, 
+	=?UTF-8?B?0J7QsdC7LtGW0L3RhNC10LrRhtGW0LnQvdCwINC70ZbQutCw0YDQvdGP?= <infekciyna@ukr.net>, 
+	=?UTF-8?B?0JfQo9Ch0JTQnNCm?= <zusdmc@ukr.net>, 
+	=?UTF-8?B?0J/QtdGA0LjQvdCw0YLQsNC70YzQvdC40Lkg0KbQtdC90YLRgA==?= <Percentr.Lviv@ukr.net>, 
+	percentr.lviv@gmail.com, =?UTF-8?B?0JrQkNCg0JTQhtCe0KbQldCd0KLQoA==?= <cardiolviv@gmail.com>, 
+	=?UTF-8?B?0J7QsdC7LtGI0LrRltGALdCy0LXQvS7QtNC40YHQv9Cw0L3RgdC10YA=?= <oblven-dysp@meta.ua>, 
+	=?UTF-8?B?0JvQtdGB0Y8g0JPQsNCy0YDQuNGB0Y7Qug==?= <l.oblven@ukr.net>, 
+	=?UTF-8?B?0JTRltCw0LPQvdC+0YHRgtC40YfQvdC40Lkg0YbQtdC90YLRgA==?= <lokdc@meta.ua>, 
+	=?UTF-8?B?0JHRjtGA0L4g0YHRg9C00LzQtdC00LXQutGB0L/QtdGA0YLQuNC30Lg=?= <lvivpekarska61@gmail.com>, 
+	=?UTF-8?B?0J7QsdC7LtC/0YHQuNGF0L7QvdC10LLRgNC+0LvQvtCzLtC00LjRgdC/0LDQvdGB0LXRgA==?= <lokpnd@ukr.net>, 
+	=?UTF-8?B?0J3QsNGA0LrQvtC00LjRgdC/0LDQvdGB0LXRgA==?= <lodknd@meta.ua>, 
+	=?UTF-8?B?0J/QsNGC0LDQvdCw0YLQvtC80ZbRh9C90LUg0LHRjtGA0L4=?= <lopab@ukr.net>, 
+	Lvivkrov SlugbaKrovi <lvivkrov@gmail.com>, 
+	=?UTF-8?B?0K/RgNC+0YHQu9Cw0LIg0JzQuNGF0LDQudC70L7QstC40Ycg0JTRj9C60ZbQsg==?= <lvivocsk@gmail.com>, 
+	=?UTF-8?B?0JzQodCV0Jo=?= <lvivmce@ukr.net>, 
+	=?UTF-8?B?0JXQvdC00L7QutGA0LjQvdC90LjQuSDQtNC40YHQv9Cw0L3RgdC10YA=?= <lred@ua.fm>, 
+	=?UTF-8?B?0JvQntCT0IbQktGW0KA=?= <logrp@ukr.net>, 
+	=?UTF-8?B?0KHQv9C+0YDRgtC00LjRgdC/0LDQvdGB0LXRgA==?= <lolfdlviv@ukr.net>, 
+	=?UTF-8?B?0KbQtdC90YLRgCDRgNCw0LTRltCw0YbRltC50L3QvtCz0L4g0LfQsNGF0LjRgdGC0YMg0L3QsNGB0LU=?=
+	=?UTF-8?B?0LvQtdC90L3Rjw==?= <losdrzn@ukr.net>, 
+	=?UTF-8?B?0JrQl9Cb0J7QoCDQntCx0LvQsNGB0L3QsCDQsdCw0LfQsCDRgdC/0LXRhtGW0LDQu9GM0L3QvtCz0L4g?=
+	=?UTF-8?B?0LzQtdC00LjRh9C90L7Qs9C+INC/0L7RgdGC0LDRh9Cw0L3QvdGP?= <oblasnabsmp@ukr.net>, 
+	=?UTF-8?B?0KbQtdC90YLRgCDQs9GA0L7QvNCw0LTRgdGM0LrQvtCz0L4g0LfQtNC+0YDQvtCy4oCZ0Y8=?= <lvivpublichealth@gmail.com>, 
+	=?UTF-8?B?0JvRjNCy0ZbQsiDQldCc0JQg0YLQsCDQnNCa?= <lvivemdmk@gmail.com>, 
+	=?UTF-8?B?0JLQndCa0Jcg0JvQntCgINCb0YzQstGW0LLRgdGM0LrQuNC5INGW0L3RgdGC0LjRgtGD0YIg0LzQtdC0?=
+	=?UTF-8?B?0YHQtdGB0YLRgNC40L3RgdGC0LLQsCDRgtCwINC70LDQsdC+0YDQsNGC0L7RgNC90L7RlyDQvNC10LQ=?=
+	=?UTF-8?B?0LjRhtC40L3QuCDRltC8LtCQ0L3QtNGA0LXRjyDQmtGA0YPQv9C40L3RgdGM0LrQvtCz0L4=?= <ldmk@ukr.net>, 
+	=?UTF-8?B?0JzQtdC00LrQvtC70LXQtNC2?= <medcolpo@gmail.com>, bmu_2007@ukr.net, 
+	=?UTF-8?B?0KHQsNC80LHRltGA0YHRjNC60LjQuSDRhNCw0YXQvtCy0LjQuSDQvNC10LTQuNGH0L3QuNC5INC60L4=?=
+	=?UTF-8?B?0LvQtdC00LY=?= <sambirfmk@gmail.com>, 
+	=?UTF-8?B?0JHRg9C00LjQvdC+0Log0LTQuNGC0LjQvdC4IOKEljE=?= <kbd1_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?0JHRg9C00LjQvdC+0Log0LTQuNGC0LjQvdC4IOKEljI=?= <kbd2lviv@gmail.com>, 
+	hoverla.morshin@gmail.com, 
+	=?UTF-8?B?0KHQstGW0YLQu9Cw0L3QsCDQmtC+0YXQsNC9?= <sosnivkalvl3@ukr.net>, 
+	=?UTF-8?B?0JHQvtGA0LjRgdC70LDQsiDQptCc0Js=?= <cmlboryslav@ukr.net>, 
+	ohorona_zdor_stryi@ukr.net, scmlvoz@ukr.net, kadruscml@ukr.net, 
+	=?UTF-8?B?0JLQntCXINCU0YDQvtCz0L7QsdC40Yc=?= <vozvodmr@ukr.net>, 
+	dmlsekrodyn@ukr.net, 
+	=?UTF-8?B?0KLRgNGD0YHQutCw0LLQtdGG0YzQutCwINC80ZbRgdGM0LrQsCDQu9GW0LrQsNGA0L3Rjw==?= <kptml@ukr.net>, 
+	mscherrda@ukr.net, 
+	=?UTF-8?B?0KfQtdGA0LLQvtC90L7Qs9GA0LDQtNGB0YzQutCwINCm0JzQmw==?= <cherv-likarnya@ukr.net>, 
+	=?UTF-8?B?0KfQtdGA0LLQvtC90L7Qs9GA0LDQtNGB0YzQutCwINGG0LXQvdGC0YDQsNC70YzQvdCwINC80ZbRgdGM?=
+	=?UTF-8?B?0LrQsCDQu9GW0LrQsNGA0L3Rjywg0LHRg9GF0LPQsNC70YLQtdGA0ZbRjw==?= <buh.likarnia@ukr.net>, 
+	=?UTF-8?B?0J3QvtCy0L7RgNC+0LfQtNGW0LvRjNGB0YzQutCwINC80ZbRgdGM0LrQsCDQu9GW0LrQsNGA0L3Rjw==?= <novrozml@ukr.net>, 
+	=?UTF-8?B?0JzQvtGA0YjQuNC90YHRjNC60LAg0JzQmw==?= <likmorchyn@ukr.net>, 
+	=?UTF-8?B?0JHRgNC+0LTRltCy0YHRjNC60LAg0KbQoNCb?= <brodycrl2015@ukr.net>, 
+	=?UTF-8?B?0JHRg9GB0YzQutCwINCm0KDQmw==?= <buskcrl@ukr.net>, 
+	=?UTF-8?B?0JPQvtGA0L7QtNC+0YbRjNC60LAg0LvRltC60LDRgNC90Y8=?= <gorcrl@ukr.net>, 
+	knp_drl@ukr.net, =?UTF-8?B?0JbQuNC00LDRh9GW0LLRgdGM0LrQsCDQptCg0Js=?= <Crl_zhydachyv@ukr.net>, 
+	=?UTF-8?B?0JbQvtCy0LrRltCy0YHRjNC60LAg0KbQoNCb?= <crlzhovkva@gmail.com>, 
+	=?UTF-8?B?0JfQvtC70L7Rh9GW0LLRgdGM0LrQsCDQptCg0Js=?= <zolcrl@i.ua>, 
+	=?UTF-8?B?0JfQvtC70L7Rh9GW0LLRgdGM0LrQsCDQptCg0Js=?= <knpzolcrl@ukr.net>, 
+	=?UTF-8?B?0JrQsNC80Y/QvdC60LAt0JHRg9C30YzQutCwINCm0KDQmw==?= <kam-crl@ukr.net>, 
+	=?UTF-8?B?0JzQuNC60L7Qu9Cw0ZfQstGB0YzQutCwINCa0KbQoNCb?= <mukolajiv_kcrl@ukr.net>, 
+	=?UTF-8?B?0JrQndCfINCc0L7RgdGC0LjRgdGM0LrQsCDQptCg0Js=?= <knp.mcrl@gmail.com>, 
+	=?UTF-8?B?0J/QtdGA0LXQvNC40YjQu9GP0L3RgdGM0LrQsCDQptCg0Js=?= <kppcrl@ukr.net>, 
+	=?UTF-8?B?0J/Rg9GB0YLQvtC80LjRgtGW0LLRgdGM0LrQsCDQptCg0Js=?= <crlpustomyty@ukr.net>, 
+	=?UTF-8?B?0KDQsNC00LXRhdGW0LIg0KbQoNCb?= <nachmed80200@ukr.net>, 
+	=?UTF-8?B?0KHQsNC80LHRltGA0YHRjNC60LAg0KbQoNCb?= <sambirska_lik@ukr.net>, 
+	=?UTF-8?B?0KHQutC+0LvQtSDQptCg0Js=?= <skole_crl@ukr.net>, 
+	=?UTF-8?B?0KHQvtC60LDQu9GMINCm0KDQmw==?= <sokal_crl@ukr.net>, 
+	=?UTF-8?B?0KHQotCQ0KDQmNCZINCh0JDQnNCR0IbQoCDQptCg0Js=?= <strscrlnova@gmail.com>, 
+	=?UTF-8?B?0KHQotCg0JjQmdCh0KzQmtCQINCm0KDQmw==?= <stry_crl@ukr.net>, 
+	=?UTF-8?B?0KLRg9GA0LrRltCy0YHRjNC60LAg0JrQptCg0Js=?= <turka.kcrl@ukr.net>, 
+	turkarajlikarnia74@ukr.net, 
+	=?UTF-8?B?0K/QstC+0YDRltCy0YHRjNC60LAg0KbQoNCb?= <javoriv_hospital@ukr.net>, 
+	=?UTF-8?B?0J3QvtCy0L7Rj9Cy0L7RgNGW0LLRgdGM0LrQsCDQnNCb?= <nrl_hospital@meta.ua>, 
+	stomatologiyaboryslav@ukr.net, ulanapoluzin@gmail.com, 
+	onkodrogobych@gmail.com, dml5@ukr.net, 
+	=?UTF-8?B?0JrQndCfINCU0YDQvtCz0L7QsdC40YbRjNC60LAg0LzRltGB0YzQutCwINC00LjRgtGP0YfQsCDQu9GW?=
+	=?UTF-8?B?0LrQsNGA0L3RjyDQlNCc0KA=?= <dmdl2010@ukr.net>, 
+	=?UTF-8?B?0JTRgNC+0LPQvtCx0LjRhyDQnNCf0JE=?= <roddom_dr@ukr.net>, 
+	=?UTF-8?B?0JTRgNC+0LPQvtCx0LjRhtGM0LrQsCDQvNGW0YHRjNC60LAg0L/QvtC70ZbQutC70ZbQvdGW0LrQsA==?= <dromipol@ukr.net>, 
+	=?UTF-8?B?0JvRjtC00LzQuNC70LAg0JzQuNC60L7Qu9C40YjQuNC90LA=?= <vozdmsp@ukr.net>, 
+	=?UTF-8?B?0JrQndCfINCh0YLQtdCx0L3QuNGG0YzQutCwINC80ZbRgdGM0LrQsCDQu9GW0LrQsNGA0L3Rjw==?= <knpsmldmr@ukr.net>, 
+	=?UTF-8?B?0JzQuNC60L7Qu9CwINCl0L7RgNC+0L3QttCw0Lo=?= <likar.medenich@gmail.com>, 
+	shidnytsa-pervynka@ukr.net, brody_stomat@ukr.net, 
+	hospital.zabolotsy@gmail.com, pidkaminlikar@gmail.com, polyany_amb@ukr.net, 
+	=?UTF-8?B?0JrQndCfINCm0J/QnNCh0JQ=?= <perv.bmr@gmail.com>, 
+	knpbibrskaml@ukr.net, novist2021@ukr.net, 
+	=?UTF-8?B?0KAu0JEu0JPQvtC5?= <azpsm-vlubin@ukr.net>, 
+	likarnya.glynyany@gmail.com, gorodok_stomat@ukr.net, cpmsd2016@ukr.net, 
+	=?UTF-8?B?0IbRgNC40L3QsCDQkdGW0LvQuNC6?= <irinabilik1@gmail.com>, 
+	=?UTF-8?B?0JzQuNGA0L7RgdC70LDQstCwINCW0LjQs9Cw0LnQu9C+?= <zhigajlo1983@gmail.com>, 
+	zhovtanetskaazpsm@gmail.com, Lazvoda@ukr.net, 
+	=?UTF-8?B?0KbQtdC90YLRgCDQv9GA0LXQstC40L3QvdC+0Zcg0LTQvtC/0L7QvNC+0LPQuCDQmtCw0LzigJnRj9C9?=
+	=?UTF-8?B?0LrQsC3QkdGD0LfRjNC60LA=?= <k42021164@gmail.com>, 
+	cpmsdkomarno@ukr.net, murovane.ambulatoria@gmail.com, yarychiv_rl@ukr.net, 
+	obrlik@ukr.net, =?UTF-8?B?0ZbRgNC40L3QsCDQstC40YHQvtGH0LDQvdGB0YzQutCw?= <i-y-v@ukr.net>, 
+	pmdpustomyty@ukr.net, =?UTF-8?B?0JzQsNGA0ZbRjyDQoNC+0LzQsNC90LjRiNC40L0=?= <ravamed@ukr.net>, 
+	=?UTF-8?B?0KHQvtC60ZbQu9GM0L3QuNGG0YzQutCwINCw0LzQsdGD0LvQsNGC0L7RgNGW0Y8=?= <sokilnuku.ambulatoria@gmail.com>, 
+	=?UTF-8?B?0J7Qu9C10LrRgdCw0L3QtNGA0LAg0KHRgtC10L/QsNC90ZbQstC90LA=?= <med_solonka@ukr.net>, 
+	shchyrecmedic@gmail.com, 
+	=?UTF-8?B?0JrQndCfINCm0J/QnNCh0JQg0JHRltGB0LrQvtCy0LjRhtGM0LrQvtGXINGB0ZbQu9GM0YHRjNC60L4=?=
+	=?UTF-8?B?0Zcg0YDQsNC00Lgg0KHQsNC80LHRltGA0YHRjNC60L7Qs9C+INGA0LDQudC+0L3Rgw==?= <voyut_amb@ukr.net>, 
+	BorunskaKML@gmail.com, 
+	=?UTF-8?B?0J/RgNC40LnQvNCw0LvRjNC90Y8g0JrQndCfINCU0JzQoCDQlNC+0LHRgNC+0LzQuNC70YzRgdGM0Lo=?=
+	=?UTF-8?B?0LAg0YDQsNC50L7QvdC90LAg0LvRltC60LDRgNC90Y8=?= <dobrlikarnja@ukr.net>, 
+	=?UTF-8?B?0JDQl9Cf0KHQnCDQndC+0LLQtSDQnNGW0YHRgtC+?= <ambulnovemisto@ukr.net>, 
+	kzazpsm16@ukr.net, 
+	=?UTF-8?B?0J7QutGB0LDQvdCwINCl0LDQsdCw0LvRjA==?= <kznsraambulatorijazpsm@gmail.com>, 
+	=?UTF-8?B?0J7Qu9GM0LPQsCDQlNC+0LvQuNC90YHRjNC60LA=?= <novkalynivmcpmd@ukr.net>, 
+	centrralivka2021@ukr.net, 
+	=?UTF-8?B?0KHQsNC80LHRltGA0YHRjNC60LAg0YDQsNC50L7QvdC90LAg0LvRltC60LDRgNC90Y8g0KXQvtGB0L8=?=
+	=?UTF-8?B?0ZbRgQ==?= <sambir-hospis@online.ua>, 
+	=?UTF-8?B?0JrQndCfINCg0YPQtNC60ZbQstGB0YzQutCwINC70ZbQutCw0YDQvdGPINCg0YPQtNC60ZbQstGB0Yw=?=
+	=?UTF-8?B?0LrQvtGXINC80ZbRgdGM0LrQvtGXINGA0LDQtNC4?= <rudkylikarnya@ukr.net>, 
+	ambluky16@ukr.net, rudkypervynka@gmail.com, sambirpoliklinik@gmail.com, 
+	=?UTF-8?B?0KHRgtCw0YDQvtGB0LDQvNCx0ZbRgNGB0YzQutC40Lkg0KbQn9Cc0JQ=?= <st.sambirpmd@gmail.com>, 
+	=?UTF-8?B?0L3QuNC60L7Qu9Cw0Lkg0Y/RhtC60YPQu9GP0Lo=?= <jmp7@ukr.net>, 
+	=?UTF-8?B?0JTQsNGA0ZbRjyDQn9Cw0L3RjNC60ZbQsg==?= <hnyzclinik@gmail.com>, 
+	Ambulanc_otg@ukr.net, mlzuravno@ukr.net, rosv.cpmsd@gmail.com, 
+	=?UTF-8?B?0KHQutC+0LvRltCy0YHRjNC60LjQuSDQptCf0JzQlA==?= <skole_cpmd@ukr.net>, 
+	=?UTF-8?B?0JrQndCfINCh0LvQsNCy0YHRjNC60LAg0LzRltGB0YzQutCwINC70ZbQutCw0YDQvdGP?= <slavska_ml@ukr.net>, 
+	=?UTF-8?B?0KHRgtGA0LjQudGB0YzQutCwINC80ZbRgdGM0LrQsCDQtNC40YLRj9GH0LAg0LvRltC60LDRgNC90Y8=?= <dytlik_stryi@ukr.net>, 
+	=?UTF-8?B?0KHRgtGA0LjQuSDQn9CR?= <pologoviy@ukr.net>, stomatstry@ukr.net, 
+	stryicentr@ukr.net, lik_stryj@ukr.net, likb_stryj@ukr.net, 
+	cpmsd_trostyanets <cpmsd_trostyanets@ukr.net>, 
+	=?UTF-8?B?0JzQsNGA0ZbRjyDQn9C10YfQtdC90LA=?= <khodoriv.ml@gmail.com>, 
+	velikomostivskarl@mail.ru, velikomostivskarl@ukr.net, dobrotvirml@gmail.com, 
+	lopatinlikarnia@ukr.net, kmetsolesya@gmail.com, cherv-cpmsd@ukr.net, 
+	=?UTF-8?B?0JrQnyDQnNCbINCh0JzQoA==?= <sosnivskaml@ukr.net>, 
+	=?UTF-8?B?0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutCwINC70ZbQutCw0YDQvdGP?= <if-likarnya2@ukr.net>, 
+	mostmedcentr@ukr.net, skml2017@ukr.net, 
+	yaroslav budzin <yaroslavb1989@gmail.com>, zpsm2017@ukr.net, grytsakr@gmail.com, 
+	knp_sheg_cpmsd@ukr.net, kz.azpsm.shegini@gmail.com, knp_volycia_azpsm@ukr.net, 
+	nemyriv.ml@bigmir.net, 
+	=?UTF-8?B?0KPQntCXINCb0YzQstGW0LLRgdGM0LrQvtGXINC80ZbRgdGM0LrRgNCw0LTQuA==?= <uoz_lviv@ukr.net>, 
+	=?UTF-8?B?0JLQvtGA0L7QsdC10LvRjCDQntC60YHQsNC90LAg0JzQuNC60L7Qu9Cw0ZfQstC90LA=?= <emergencyhospital_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?0JzQlNCa0Js=?= <mdkl_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?OC3QsCDQnNCa0Js=?= <8kmkl_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?MTAt0LAg0JzQmyDQvC7Qm9GM0LLQvtCy0LA=?= <10kmkl_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?MS3QsCDQvNGW0YHRjNC60LAg0L8t0LrQsA==?= <1kmp_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?Mi3QsCDQvy3QutCwINCb0YzQstGW0LI=?= <2kmp_uoz_lviv@ukr.net>, 
+	dplz@ukr.net, =?UTF-8?B?NC3QsCDQvy3QutCwINC8LtCb0YzQstC+0LLQsA==?= <4kmp_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?NS3QsCDQnNCf?= <5kmp_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?Ni3QsCDQnNCf?= <6kmkl_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?MS3QsCDRgdGC0L7QvNCw0YIu0L8t0LrQsA==?= <1sp_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?My3QsCDRgdGC0L7QvNCw0YIu0L8t0LrQsA==?= <3sp_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?NC3QsCDRgdGC0L7QvNCw0YIu0L8t0LrQsA==?= <4sp_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?NS3QsCDRgdGC0L7QvNCw0YIu0L8t0LrQsA==?= <5sp_uoz_lviv2007@ukr.net>, 
+	=?UTF-8?B?0JPQvtGB0L/RgNC+0LfRgNCw0YXRg9C90LrQvtCy0LAg0YHRgtC+0LzQsNGCLtC/LdC60LA=?= <hsplviv@ukr.net>, 
+	=?UTF-8?B?0JrQvtGB0LzQtdGC0L7Qu9C+0LPRltGH0L3QsCDQu9GW0LrQsNGA0L3Rjw==?= <krasota_uoz_lviv@ukr.net>, 
+	=?UTF-8?B?0JrQndCfINCb0YzQstGW0LLRgdGM0LrQtSDQotCc0J4gMg==?= <tmo2_uoz_lviv@ukr.net>, 
+	tmo3_lviv@ukr.net, mczmi_lviv@ukr.net, ugoncarenko230@gmail.com, 
+	knpsmldmr1@ukr.net, vlubin-azpsm@ukr.net, bordynvira@gmail.com, 
+	=?UTF-8?B?0KXQvtC00L7RgNGW0LLRgdGM0LrQsCDQkNCX0J/QodCc?= <pmdhodoriv@gmail.com>, 
+	=?UTF-8?B?0JDQvNCx0YPQu9Cw0YLQvtGA0ZbRjyDQndC+0LLRliDQodGC0YDRltC70LjRidCw?= <novistrilyshcha.ambulatoriya@gmail.com>, 
+	knpravalikarnya@ukr.net, health2.zhovtantci+1@gmail.com, 
+	=?UTF-8?B?0K7RgNGW0Lkg0JzQsNC60LDRgNGD0YXQsA==?= <makarukha1204@gmail.com>, 
+	golovna-2019+1@ukr.net, nakonechnagal0705@gmail.com, irinabilik1@ukr.net, 
+	lopatinlikarna@gmail.com, zpsmberegu@ukr.net, ambulbisc@ukr.net, 
+	zpsmvolia@ukr.net, koss_igor@ukr.net, 
+	=?UTF-8?B?0JDRgNGC0YPRgCDQmtGA0L7QvdC20LrQvg==?= <umbrela1964@ukr.net>, 
+	nkspets@ukr.net, sambircentr1@ukr.net, direktorcentrpmd@gmail.com, 
+	likarnyad@ukr.net, likarnya222@ukr.net, pukalor@gmail.com, 
+	bibrskaRL <bibrskarl@ukr.net>, markinn@ukr.net, krasneknp@gmail.com, 
+	cpmsdstrilky@gmail.com, zdravrda@ukr.net, stryicpmsd@ukr.net, 
+	=?UTF-8?B?0KbQtdC90YLRgCDQt9C00L7RgNC+0LLRjw==?= <locz@mail.lviv.ua>, 
+	mykolaiv_mcpmsd@ukr.net, osvita-striy-rda@ukr.net, 
+	=?UTF-8?B?0J3QsNGC0LDQu9GPINCi0ZbQvNC60L4t0IbQstCw0L3Rh9C10L3QutC+?= <timknat@ukr.net>, 
+	oksana.filts@paraskeva.eu, pavlovska127m@gmail.com, 
+	natakotovich1717@gmail.com, fopk_medical@ukr.net, inartrit@gmail.com, 
+	mcbabyclinic@gmail.com, likarjura@ukr.net, 
+	=?UTF-8?B?0J7QutGB0LDQvdCwINCh0LrRltGA0LrQvg==?= <oramedcentrdr@gmail.com>, 
+	polyanskatanya@gmail.com, lidiia.aparina@gmail.com, knyshirina@ukr.net, 
+	pervynkatr@gmail.com, zdorovarodynabrody@ukr.net, crl-g@ukr.net, 
+	zu.nadiia@gmail.com, oleksandrbandura83@gmail.com, bereznuk0606@gmail.com, 
+	oksanakmit989@gmail.com, galunavahno@gmail.com, besagalesja@gmail.com, 
+	demko13@i.ua, voziv29@gmail.com, doctor.lviv@gmail.com, 
+	info@plichoplich.com.ua, olgarysei21@gmail.com, smajlyk.2021@gmail.com, 
+	fedenko.nat@gmail.com, dfcz50@ukr.net, kotsur_viktoria@bigmir.net, 
+	arnika_stry@bigmir.net, khrystyna.m2014@gmail.com, petryklyuda@gmail.com, 
+	info@veselka.clinic, medoffice56.1@gmail.com, info@childrenhealth.center, 
+	nadia.duda33@gmail.com, roksballa@gmail.com, vulyk.familymedicine@gmail.com, 
+	olha.seredyuk@gmail.com, minipoliklinika@gmail.com, info@salutas.com.ua, 
+	info@medpark.center, =?UTF-8?B?0K7Qu9GW0LDQvdCwINCR0LDRh9C10Lo=?= <office@medcenter.lviv.ua>, 
+	medcenter.st@paraskeva.eu, zarembalena@ukr.net, mdfd@i.ua, 
+	reception@medicover.ua, vulyk.vynnyky@gmail.com, 
+	=?UTF-8?B?0KbQtdC90YLRgCDQt9C00L7RgNC+0LLRjw==?= <locz.lviv@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c900d7062963919a"
+X-Authentication-Results: mxs.ukr.net;
+		dkim=pass  header.i= header.d=gmail.com envelope-from=dephealth.lvivoda@gmail.com;
+		spf=pass (frv71.fwdcdn.com: domain of gmail.com designates 209.85.208.174 as permitted sender) client-ip=209.85.208.174;
+		dmarc=accept header-from=dephealth.lvivoda@gmail.com
+X-Ukrnet-Yellow: 0
+X-Ukrnet-Flavor: coconut
+
+--000000000000c900d7062963919a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+0JTQtdC/0LDRgNGC0LDQvNC10L3RgiDQvtGF0L7RgNC+0L3QuCDQt9C00L7RgNC+0LLigJnRjyDQ
+m9GM0LLRltCy0YHRjNC60L7RlyDQvtCx0LvQsNGB0L3QvtGXINC00LXRgNC20LDQstC90L7Rlw0K
+0LDQtNC80ZbQvdGW0YHRgtGA0LDRhtGW0Zcg0L/QvtCy0ZbQtNC+0LzQu9GP0ZQsDQrRidC+ICox
+Ny4xMi4yMDI0INC+IDA5OjMwINCz0L7QtC4qINC90LAg0L/Qu9Cw0YLRhNC+0YDQvNGWIFpvb20g
+0LLRltC00LHRg9C00LXRgtGM0YHRjyDQvtC90LvQsNC50L0g4oCTINC90LDRgNCw0LTQsA0K0LTQ
+uNGA0LXQutGC0L7RgNCwINC00LXQv9Cw0YDRgtCw0LzQtdC90YLRgyDQvtGF0L7RgNC+0L3QuCDQ
+t9C00L7RgNC+0LLigJnRjyDQm9GM0LLRltCy0YHRjNC60L7RlyDQntCU0JAg0Lcg0LrQtdGA0ZbQ
+stC90LjQutCw0LzQuA0K0LfQsNC60LvQsNC00ZbQsiDQvtGF0L7RgNC+0L3QuCDQt9C00L7RgNC+
+0LLigJnRjyDQm9GM0LLRltCy0YHRjNC60L7RlyDQvtCx0LvQsNGB0YLRli4NCg0KKtCf0L7RgNGP
+0LTQvtC6ICDQtNC10L3QvdC40Lkg0LHRg9C00LUg0L3QsNC00ZbRgdC70LDQvdC+INC00L7QtNCw
+0YLQutC+0LLQvioNCg0KKtCf0L7RgdC40LvQsNC90L3RjyDQvdCwINC90LDRgNCw0LTRgzoqDQpo
+dHRwczovL3VzMDZ3ZWIuem9vbS51cy9qLzQ2ODkzNzg1ODY/cHdkPTJWZXFBRkVpRnJHNDJ1UDg0
+OHpwM1BRQUhUUXZ2Wi4xDQoNCjQ2OCA5MzcgODU4NiDRltC00LXQvdGC0LjRhNGW0LrQsNGC0L7R
+gA0KQWlpYzkyINC60L7QtCDQtNC+0YHRgtGD0L/Rgw0KDQoq0Jcg0L/QvtCy0LDQs9C+0Y4qDQoq
+0LTQtdC/0LDRgNGC0LDQvNC10L3RgiDQvtGF0L7RgNC+0L3QuCDQt9C00L7RgNC+0LLigJnRjyoN
+CirQm9GM0LLRltCy0YHRjNC60L7RlyDQvtCx0LvQtNC10YDQttCw0LTQvNGW0L3RltGB0YLRgNCw
+0YbRltGXKg0KDQoNCg0KDQo+DQo=
+--000000000000c900d7062963919a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+PGRpdiBkaXI9Imx0ciI+PGRpdj48YnIgY2xlYXI9ImFsbCI+PC9kaXY+
+PGRpdj48ZGl2IGRpcj0ibHRyIiBjbGFzcz0iZ21haWxfc2lnbmF0dXJlIj48ZGl2IGRpcj0ibHRy
+Ij48ZGl2PjxkaXYgZGlyPSJsdHIiPjxkaXY+PGRpdiBkaXI9Imx0ciI+PGRpdj48ZGl2IGRpcj0i
+bHRyIj48ZGl2PjxkaXYgZGlyPSJsdHIiPjxkaXY+PGRpdiBkaXI9Imx0ciI+PGJyPjxkaXY+PGRp
+dj48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsMCwwKSI+0JTQtdC/0LDRgNGC0LDQvNC10L3RgiDQ
+vtGF0L7RgNC+0L3QuCDQt9C00L7RgNC+0LLigJnRjyDQm9GM0LLRltCy0YHRjNC60L7RlyDQvtCx
+0LvQsNGB0L3QvtGXINC00LXRgNC20LDQstC90L7RlyDQsNC00LzRltC90ZbRgdGC0YDQsNGG0ZbR
+l8KgPC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwwLDApIj7Qv9C+0LLRltC00L7QvNC7
+0Y/RlCwg0YnQviA8Yj4xNy4xMi4yMDI0INC+IDA5OjMwINCz0L7QtC48L2I+INC90LAg0L/Qu9Cw
+0YLRhNC+0YDQvNGWIFpvb20g0LLRltC00LHRg9C00LXRgtGM0YHRjyDQvtC90LvQsNC50L0g4oCT
+wqA8L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLDAsMCkiPtC90LDRgNCw0LTQsMKgINC0
+0LjRgNC10LrRgtC+0YDQsCDQtNC10L/QsNGA0YLQsNC80LXQvdGC0YMg0L7RhdC+0YDQvtC90Lgg
+0LfQtNC+0YDQvtCy4oCZ0Y8g0JvRjNCy0ZbQstGB0YzQutC+0Zcg0J7QlNCQINC3INC60LXRgNGW
+0LLQvdC40LrQsNC80Lgg0LfQsNC60LvQsNC00ZbQsiDQvtGF0L7RgNC+0L3QuCDQt9C00L7RgNC+
+0LLigJnRjyDQm9GM0LLRltCy0YHRjNC60L7RlyDQvtCx0LvQsNGB0YLRli48L3NwYW4+PC9kaXY+
+PGRpdj48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsMCwwKSI+PGJyPjwvc3Bhbj48L2Rpdj48ZGl2
+PjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwwLDApIj48Yj7Qn9C+0YDRj9C00L7QusKgINC00LXQ
+vdC90LjQuSDQsdGD0LTQtSDQvdCw0LTRltGB0LvQsNC90L4g0LTQvtC00LDRgtC60L7QstC+PC9i
+Pjwvc3Bhbj48L2Rpdj48ZGl2PjxkaXYgZGlyPSJsdHIiIGNsYXNzPSJnbWFpbF9zaWduYXR1cmUi
+PjxkaXYgZGlyPSJsdHIiPjxkaXY+PGRpdiBkaXI9Imx0ciI+PGRpdj48ZGl2IGRpcj0ibHRyIj48
+ZGl2PjxkaXYgZGlyPSJsdHIiPjxkaXY+PGRpdiBkaXI9Imx0ciI+PGRpdj48ZGl2IGRpcj0ibHRy
+Ij48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsMCwwKSI+PGJyPjwvc3Bhbj48L2Rpdj48ZGl2IGRp
+cj0ibHRyIj48c3BhbiBzdHlsZT0iY29sb3I6cmdiKDAsMCwwKSI+PGI+0J/QvtGB0LjQu9Cw0L3Q
+vdGPINC90LAg0L3QsNGA0LDQtNGDOjwvYj48L3NwYW4+PGJyIHN0eWxlPSJjb2xvcjpyZ2IoMCww
+LDApIj48YSBocmVmPSJodHRwczovL3VzMDZ3ZWIuem9vbS51cy9qLzQ2ODkzNzg1ODY/cHdkPTJW
+ZXFBRkVpRnJHNDJ1UDg0OHpwM1BRQUhUUXZ2Wi4xIiB0YXJnZXQ9Il9ibGFuayI+aHR0cHM6Ly91
+czA2d2ViLnpvb20udXMvai80Njg5Mzc4NTg2P3B3ZD0yVmVxQUZFaUZyRzQydVA4NDh6cDNQUUFI
+VFF2dlouMTwvYT48YnIgc3R5bGU9ImNvbG9yOnJnYigwLDAsMCkiPjxiciBzdHlsZT0iY29sb3I6
+cmdiKDAsMCwwKSI+PHNwYW4gc3R5bGU9ImNvbG9yOnJnYigwLDAsMCkiPjQ2OCA5MzcgODU4NiDR
+ltC00LXQvdGC0LjRhNGW0LrQsNGC0L7RgDwvc3Bhbj48YnIgc3R5bGU9ImNvbG9yOnJnYigwLDAs
+MCkiPjxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMCwwLDApIj5BaWljOTIg0LrQvtC0INC00L7RgdGC
+0YPQv9GDPC9zcGFuPjxicj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rp
+dj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48YnI+PGI+PGk+0Jcg0L/QvtCy
+0LDQs9C+0Y48L2k+PC9iPjwvZGl2PjxkaXY+PGI+PGk+0LTQtdC/0LDRgNGC0LDQvNC10L3RgiDQ
+vtGF0L7RgNC+0L3QuCDQt9C00L7RgNC+0LLigJnRjzwvaT48L2I+PC9kaXY+PGRpdj48Yj48aT7Q
+m9GM0LLRltCy0YHRjNC60L7RlyDQvtCx0LvQtNC10YDQttCw0LTQvNGW0L3RltGB0YLRgNCw0YbR
+ltGXPC9pPjwvYj48YnI+PGJyPjxkaXY+PGJyPjwvZGl2Pjxicj48L2Rpdj48L2Rpdj48L2Rpdj48
+L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rp
+dj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJnbWFpbF9xdW90ZSBnbWFpbF9xdW90ZV9jb250YWlu
+ZXIiPjxibG9ja3F1b3RlIGNsYXNzPSJnbWFpbF9xdW90ZSIgc3R5bGU9Im1hcmdpbjowcHggMHB4
+IDBweCAwLjhleDtib3JkZXItbGVmdDoxcHggc29saWQgcmdiKDIwNCwyMDQsMjA0KTtwYWRkaW5n
+LWxlZnQ6MWV4Ij48ZGl2IGRpcj0ibHRyIj48ZGl2IGNsYXNzPSJnbWFpbF9xdW90ZSI+PGRpdiBk
+aXI9Imx0ciIgY2xhc3M9ImdtYWlsX2F0dHIiPjxicj48L2Rpdj4NCjwvZGl2PjwvZGl2Pg0KPC9i
+bG9ja3F1b3RlPjwvZGl2PjwvZGl2Pg0K
+--000000000000c900d7062963919a--
