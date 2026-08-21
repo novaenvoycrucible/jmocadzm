@@ -1,0 +1,83 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260316082804
+Username: DESKTOP-L0I5F3J\Admin
+RunAs User: DESKTOP-L0I5F3J\Admin
+Configuration Name: 
+Machine: DESKTOP-L0I5F3J (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command $ProgressPreference='SilentlyContinue' ; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12 ; Invoke-WebRequest -Headers @{"cache-control"="no-cache"} -UseBasicParsing https://api.github.com/repos/chrisant996/clink/releases/latest | Select-Object -ExpandProperty Content
+Process ID: 5944
+PSVersion: 5.1.26100.6584
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6584
+BuildVersion: 10.0.26100.6584
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20260316082804
+**********************
+PS>. 'C:\Users\Admin\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+**********************
+Command start time: 20260316082804
+**********************
+PS>$ProgressPreference='SilentlyContinue' ; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12 ; Invoke-WebRequest -Headers @{"cache-control"="no-cache"} -UseBasicParsing https://api.github.com/repos/chrisant996/clink/releases/latest | Select-Object -ExpandProperty Content
+**********************
+Command start time: 20260316082805
+**********************
+PS>TerminatingError(Invoke-WebRequest): "The remote name could not be resolved: 'api.github.com'"
+**********************
+Windows PowerShell transcript start
+Start time: 20260316082805
+Username: DESKTOP-L0I5F3J\Admin
+RunAs User: DESKTOP-L0I5F3J\Admin
+Configuration Name: 
+Machine: DESKTOP-L0I5F3J (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command $ProgressPreference='SilentlyContinue' ; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12 ; Invoke-WebRequest -Headers @{"cache-control"="no-cache"} -UseBasicParsing https://api.github.com/repos/chrisant996/clink/releases/latest | Select-Object -ExpandProperty Content
+Process ID: 5944
+PSVersion: 5.1.26100.6584
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6584
+BuildVersion: 10.0.26100.6584
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20260316082805
+**********************
+PS>CommandInvocation(Out-String): "Out-String"
+>> ParameterBinding(Out-String): name="InputObject"; value="The remote name could not be resolved: 'api.github.com'"
+Invoke-WebRequest : The remote name could not be resolved: 'api.github.com'
+At line:1 char:138
++ ... e]::Tls12 ; Invoke-WebRequest -Headers @{"cache-control"="no-cache"}  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+Invoke-WebRequest : The remote name could not be resolved: 'api.github.com'
+At line:1 char:138
++ ... e]::Tls12 ; Invoke-WebRequest -Headers @{"cache-control"="no-cache"}  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], 
+WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+Invoke-WebRequest : The remote name could not be resolved: 'api.github.com'
+At line:1 char:138
++ ... e]::Tls12 ; Invoke-WebRequest -Headers @{"cache-control"="no-cache"}  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+
+**********************
+Command start time: 20260316082805
+**********************
+PS>$global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20260316082805
+**********************
