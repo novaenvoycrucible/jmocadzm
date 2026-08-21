@@ -1,0 +1,61 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Europe/Kiev
+X-LIC-LOCATION:Europe/Kiev
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:GMT+3
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:GMT+2
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Kiev:20250114T140000
+DTEND;TZID=Europe/Kiev:20250114T170000
+DTSTAMP:20250113T095451Z
+ORGANIZER;CN=DREAM Academy:mailto:academy@dream-office.org
+UID:3e8otdf83v71j7fu7hp3m44ndm@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=zolcrl@i.ua;X-NUM-GUESTS=0:mailto:zolcrl@i.ua
+X-MICROSOFT-CDO-OWNERAPPTID:-1609616075
+CREATED:20250113T093551Z
+DESCRIPTION:<p dir="ltr"><b>Вітаємо! </b></p><p dir="ltr">Запрошуємо вас на
+  вебінар “Субвенція в рамках фінансової угоди між Україною та ЄІБ”!</p><p d
+ ir="ltr"><b>ПРО ЩО БУДЕМО ГОВОРИТИ: </b></p><ul><li dir="ltr"><p dir="ltr">
+ Сутність "Фінансова програма" в контексті DREAM</p></li><li dir="ltr"><p di
+ r="ltr">Загальні умови субвенції у рамках Програми з відновлення України ІІ
+ І</p></li><li dir="ltr"><p dir="ltr">Якість заповнення проєктів в DREAM з у
+ рахуванням умов субвенції</p></li><li dir="ltr"><p dir="ltr">Процес подачі 
+ заявок на відбір проєктів</p></li></ul><p dir="ltr"><b>КОЛИ:</b> 14 січня 2
+ 025\, 14:00-17:00</p><p dir="ltr"><b>Чекаємо на вас в ZOOM за </b><a href="
+ https://us06web.zoom.us/j/2684976502?pwd=rx9JsTxcZUYiCB7yTNJQTMCugyPqrb.1&a
+ mp\;omn=85995685758"><b><u>ПОСИЛАННЯМ ⬅️</u></b></a></p><p dir="ltr"><i>(па
+ роль 2024)</i></p><p dir="ltr">У разі виникнення питань щодо навчання - зве
+ ртайтесь на <a href="mailto:academy@dream-office.org"><u>academy@dream-offi
+ ce.org</u></a>.</p><p dir="ltr">До зустрічі! </p>
+LAST-MODIFIED:20250113T095412Z
+LOCATION:https://us06web.zoom.us/j/2684976502?pwd=rx9JsTxcZUYiCB7yTNJQTMCug
+ yPqrb.1&omn=85995685758
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Вебінар “Субвенція в рамках фінансової угоди між Україною та ЄІБ”
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H10M0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR
