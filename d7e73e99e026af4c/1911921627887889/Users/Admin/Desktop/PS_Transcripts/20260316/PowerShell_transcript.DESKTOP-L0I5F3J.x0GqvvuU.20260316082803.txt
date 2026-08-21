@@ -1,0 +1,41 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260316082803
+Username: DESKTOP-L0I5F3J\Admin
+RunAs User: DESKTOP-L0I5F3J\Admin
+Configuration Name: 
+Machine: DESKTOP-L0I5F3J (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command Get-Host | Select-Object Version
+Process ID: 1120
+PSVersion: 5.1.26100.6584
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.6584
+BuildVersion: 10.0.26100.6584
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Command start time: 20260316082803
+**********************
+PS>. 'C:\Users\Admin\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+**********************
+Command start time: 20260316082804
+**********************
+PS>Get-Host | Select-Object Version
+
+Version
+-------
+5.1.26100.6584
+
+
+**********************
+Command start time: 20260316082804
+**********************
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20260316082804
+**********************
