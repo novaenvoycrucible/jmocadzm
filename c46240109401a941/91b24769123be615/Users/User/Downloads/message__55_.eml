@@ -1,0 +1,6 @@
+Reporting-MTA: dns; out16.mi6.kiev.ua
+
+Action: delayed
+Final-Recipient: rfc822;zoryanakypun@gmail.com
+Status: 4.0.0
+

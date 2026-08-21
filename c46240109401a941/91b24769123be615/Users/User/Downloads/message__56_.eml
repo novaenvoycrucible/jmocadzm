@@ -1,0 +1,6 @@
+Reporting-MTA: dns; out14.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;galunalaw@ukr.net
+Status: 5.0.0
+

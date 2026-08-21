@@ -1,0 +1,11 @@
+Reporting-MTA: dns; out16.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;knpzolcrl@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 552-5.7.0 This message was blocked because its content presents a potential
+ 552-5.7.0 security issue. To review our message content and attachment content
+ 552-5.7.0 guidelines, go to
+ 552 5.7.0  https://support.google.com/mail/?p=BlockedMessage ffacd0b85a97d-4463cb5a82asi4838231f8f.61 - gsmtp
+
