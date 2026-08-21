@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<discovery xmlns="urn:slpdiscovery">
+
+	<destinationAddressIPv6>ff02:0:0:0:0:0:1:134c</destinationAddressIPv6>
+
+	<methodList onlyMatching="true">
+
+		<!-- SLP method to find "service:printer" devices -->
+		<method name="Test" serviceType="printer.canon">
+			<AttributeList>
+				<devNameOID>x-can-PdInfoMachineName</devNameOID>
+				<devTypeOID>x-can-PdInfoProductName</devTypeOID>
+				<sysDescOID>sysDescr</sysDescOID>
+			</AttributeList>
+			<deviceList>
+				<device name="Canon MF3010">
+					<matchingTypeStrs name="devTypeOID">
+						<TypeStr value="MF3010"/>
+					</matchingTypeStrs>
+				</device>
+
+			</deviceList>
+		</method>
+	</methodList>
+</discovery>
