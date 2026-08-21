@@ -1,0 +1,8 @@
+Reporting-MTA: dns; st12.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;zol-pol@i.ua
+Status: 5.0.0
+Remote-MTA: dns; 10.0.0.34
+Diagnostic-Code: smtp; 550 <zol-pol@i.ua> No such user here
+

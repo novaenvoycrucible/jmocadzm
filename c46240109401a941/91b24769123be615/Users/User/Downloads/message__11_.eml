@@ -1,0 +1,8 @@
+Reporting-MTA: dns; st10.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;zol-pol@i.ua
+Status: 5.0.0
+Remote-MTA: dns; out15.mi6.kiev.ua
+Diagnostic-Code: smtp; 550 User not found. See http://mail.i.ua/err/2/
+
