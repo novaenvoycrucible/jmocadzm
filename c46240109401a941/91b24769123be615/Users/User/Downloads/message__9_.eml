@@ -1,0 +1,6 @@
+Reporting-MTA: dns; out16.mi6.kiev.ua
+
+Action: delayed
+Final-Recipient: rfc822;dls.lviv@dls.gov.ua
+Status: 4.0.0
+
