@@ -1,0 +1,8 @@
+Reporting-MTA: dns; out14.mi6.kiev.ua
+
+Action: failed
+Final-Recipient: rfc822;ukrmedexpert.business@guide.com.ua
+Status: 5.0.0
+Remote-MTA: dns; guide.com.ua
+Diagnostic-Code: smtp; 554 5.7.1 <ukrmedexpert.business@guide.com.ua>: Relay access denied
+
