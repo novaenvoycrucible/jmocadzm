@@ -1,0 +1,18 @@
+MIME-Version: 1.0
+Date: Wed, 1 Apr 2022 10:00:00 +0000
+Subject: hello
+From: alex@alex.com
+To: ivanov@ivan.com
+Content-Type: multipart/alternative; boundary="00000000000052490f05dbfcf588"
+
+--00000000000052490f05dbfcf588
+Content-Type: text/plain; charset="UTF-8"
+
+world
+
+--00000000000052490f05dbfcf588
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">world<br></div>
+
+--00000000000052490f05dbfcf588--

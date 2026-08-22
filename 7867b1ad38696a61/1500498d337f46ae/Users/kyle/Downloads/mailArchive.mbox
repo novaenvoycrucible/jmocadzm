@@ -1,0 +1,23 @@
+From - Fri Apr 01 10:00:00 2022
+MIME-Version: 1.0
+Date: Wed, 1 Apr 2022 10:00:00 +0000
+Subject: hello
+From: alex@alex.com
+To: ivanov@ivan.com
+Content-Type: multipart/alternative; boundary="00000000000052490f05dbfcf588"
+
+This is a multi-part message in MIME format.
+
+--00000000000052490f05dbfcf588
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+d29ybGQNCg==
+--00000000000052490f05dbfcf588
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+d29ybGQ8YnI+PC9kaXY+DQo=
+--00000000000052490f05dbfcf588--
+
+
